@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMP Quiz Trainer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-panel">
+        <div>
+          <p class="eyebrow">Interactive exam practice</p>
+          <h1>PMP Quiz Trainer</h1>
+          <p class="hero-copy">
+            Practice 20 questions at a time. Each answer is checked immediately, and every batch ends
+            with a score summary before you move on.
+          </p>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <span class="stat-label">Batch size</span>
+            <strong>20 questions</strong>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Feedback</span>
+            <strong>Inline after each answer</strong>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Source</span>
+            <strong>PDF question bank</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar">
+        <div class="toolbar-copy">
+          <p class="field-label">Batch selection</p>
+          <p id="meta-copy" class="muted-copy">Loading question bank...</p>
+        </div>
+        <div class="toolbar-actions">
+          <label class="field-label" for="batch-select">Choose batch</label>
+          <select id="batch-select"></select>
+          <button id="load-batch-button" type="button">Load Batch</button>
+        </div>
+      </section>
+
+      <section id="status" class="status" aria-live="polite"></section>
+
+      <section id="batch-summary" class="batch-summary hidden">
+        <div class="summary-card">
+          <span class="summary-label">Progress</span>
+          <strong id="progress-copy">0 / 20 answered</strong>
+        </div>
+        <div class="summary-card">
+          <span class="summary-label">Current score</span>
+          <strong id="score-copy">0 correct</strong>
+        </div>
+        <div class="summary-card">
+          <span class="summary-label">Batch</span>
+          <strong id="batch-copy">1</strong>
+        </div>
+      </section>
+
+      <section id="question-list" class="question-list"></section>
+
+      <section id="final-score-panel" class="final-score-panel hidden">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Batch complete</p>
+            <h2>Score Summary</h2>
+          </div>
+          <button id="next-batch-button" type="button">Next Batch</button>
+        </div>
+        <div id="final-score-grid" class="score-grid"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

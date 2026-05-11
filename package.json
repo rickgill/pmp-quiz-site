@@ -1,0 +1,9 @@
+{
+  "name": "pmp-quiz-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PMP quiz web app generated from local PDF question banks",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
