@@ -18,12 +18,63 @@ const STATIC_ROUTE_ALIASES = {
   "/": "/index.html",
 };
 
-let questionBank = [];
+let quizData = {
+  title: "PMP Quiz Trainer",
+  batchSize: 20,
+  totalQuestions: 0,
+  banks: [],
+};
+
+function slugify(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "bank";
+}
+
+function normalizeSourceLabel(value, fallback) {
+  const normalized = String(value || "").replace(/â€“/g, "-").trim();
+  return normalized || fallback;
+}
+
+function buildLegacyBank(payload) {
+  const questions = Array.isArray(payload.questions) ? payload.questions : [];
+  const firstSource = normalizeSourceLabel(questions[0]?.source, "Original Bank");
+  const bankId = slugify(firstSource);
+  return {
+    id: bankId,
+    title: firstSource.replace(/\.pdf$/i, ""),
+    source: firstSource,
+    totalQuestions: questions.length,
+    questions,
+  };
+}
+
+function normalizeBank(bank, fallbackIndex) {
+  const questions = Array.isArray(bank.questions) ? bank.questions : [];
+  const source = normalizeSourceLabel(bank.source || bank.title, `Bank ${fallbackIndex + 1}`);
+  return {
+    id: slugify(bank.id || source),
+    title: String(bank.title || source).replace(/\.pdf$/i, ""),
+    source,
+    totalQuestions: questions.length,
+    questions,
+  };
+}
 
 function loadQuestionBank() {
   const raw = fs.readFileSync(QUESTIONS_PATH, "utf8");
   const payload = JSON.parse(raw);
-  questionBank = Array.isArray(payload.questions) ? payload.questions : [];
+  const banks = Array.isArray(payload.banks) && payload.banks.length
+    ? payload.banks.map((bank, index) => normalizeBank(bank, index))
+    : [buildLegacyBank(payload)];
+
+  quizData = {
+    title: payload.title || "PMP Quiz Trainer",
+    batchSize: Number.parseInt(String(payload.batchSize || "20"), 10) || 20,
+    totalQuestions: banks.reduce((sum, bank) => sum + bank.totalQuestions, 0),
+    banks,
+  };
 }
 
 function sendJson(res, statusCode, payload) {
@@ -64,21 +115,31 @@ function serveStatic(reqPath, res) {
 }
 
 function normalizeBatchSize(value) {
-  const parsed = Number.parseInt(String(value || "20"), 10);
+  const parsed = Number.parseInt(String(value || quizData.batchSize || "20"), 10);
   if (!Number.isFinite(parsed) || parsed <= 0) {
-    return 20;
+    return quizData.batchSize || 20;
   }
   return Math.min(parsed, 50);
 }
 
-function buildBatch(batchNumber, batchSize) {
-  const totalQuestions = questionBank.length;
+function findBankById(bankId) {
+  const fallbackBank = quizData.banks[0] || null;
+  if (!bankId) {
+    return fallbackBank;
+  }
+  return quizData.banks.find((bank) => bank.id === bankId) || fallbackBank;
+}
+
+function buildBatch(bank, batchNumber, batchSize) {
+  const totalQuestions = bank.questions.length;
   const totalBatches = Math.ceil(totalQuestions / batchSize);
   const safeBatch = Math.min(Math.max(batchNumber, 1), Math.max(totalBatches, 1));
   const startIndex = (safeBatch - 1) * batchSize;
-  const questions = questionBank.slice(startIndex, startIndex + batchSize);
+  const questions = bank.questions.slice(startIndex, startIndex + batchSize);
 
   return {
+    bankId: bank.id,
+    bankTitle: bank.title,
     batchNumber: safeBatch,
     batchSize,
     totalQuestions,
@@ -88,6 +149,11 @@ function buildBatch(batchNumber, batchSize) {
 }
 
 function scoreBatch(body) {
+  const bank = findBankById(body.bankId);
+  if (!bank) {
+    return { statusCode: 404, payload: { error: "Question bank not found." } };
+  }
+
   const answers = Array.isArray(body.answers) ? body.answers : [];
   const answerMap = new Map(
     answers
@@ -98,7 +164,7 @@ function scoreBatch(body) {
   const results = [];
   let correctCount = 0;
 
-  for (const question of questionBank) {
+  for (const question of bank.questions) {
     if (!answerMap.has(question.id)) {
       continue;
     }
@@ -120,11 +186,14 @@ function scoreBatch(body) {
   }
 
   return {
-    attempted: results.length,
-    correct: correctCount,
-    incorrect: results.length - correctCount,
-    scorePct: results.length ? (correctCount / results.length) * 100 : 0,
-    results,
+    statusCode: 200,
+    payload: {
+      attempted: results.length,
+      correct: correctCount,
+      incorrect: results.length - correctCount,
+      scorePct: results.length ? (correctCount / results.length) * 100 : 0,
+      results,
+    },
   };
 }
 
@@ -134,24 +203,42 @@ const server = http.createServer((req, res) => {
   const requestUrl = new URL(req.url, `http://${req.headers.host}`);
 
   if (requestUrl.pathname === "/health" && req.method === "GET") {
-    sendJson(res, 200, { ok: true, totalQuestions: questionBank.length });
+    sendJson(res, 200, {
+      ok: true,
+      port: Number(PORT),
+      totalQuestions: quizData.totalQuestions,
+      totalBanks: quizData.banks.length,
+    });
     return;
   }
 
   if (requestUrl.pathname === "/api/quiz/meta" && req.method === "GET") {
     sendJson(res, 200, {
-      totalQuestions: questionBank.length,
-      defaultBatchSize: 20,
-      totalBatches: Math.ceil(questionBank.length / 20),
-      title: "PMP Quiz Trainer",
+      title: quizData.title,
+      totalQuestions: quizData.totalQuestions,
+      defaultBatchSize: quizData.batchSize,
+      defaultBankId: quizData.banks[0]?.id || null,
+      banks: quizData.banks.map((bank) => ({
+        id: bank.id,
+        title: bank.title,
+        source: bank.source,
+        totalQuestions: bank.totalQuestions,
+        totalBatches: Math.ceil(bank.totalQuestions / quizData.batchSize),
+      })),
     });
     return;
   }
 
   if (requestUrl.pathname === "/api/quiz/batch" && req.method === "GET") {
+    const bank = findBankById(requestUrl.searchParams.get("bank"));
+    if (!bank) {
+      sendJson(res, 404, { error: "Question bank not found." });
+      return;
+    }
+
     const batchSize = normalizeBatchSize(requestUrl.searchParams.get("size"));
     const batchNumber = Number.parseInt(requestUrl.searchParams.get("batch") || "1", 10) || 1;
-    sendJson(res, 200, buildBatch(batchNumber, batchSize));
+    sendJson(res, 200, buildBatch(bank, batchNumber, batchSize));
     return;
   }
 
@@ -166,8 +253,9 @@ const server = http.createServer((req, res) => {
     req.on("end", () => {
       try {
         const body = raw ? JSON.parse(raw) : {};
-        sendJson(res, 200, scoreBatch(body));
-      } catch (error) {
+        const { statusCode, payload } = scoreBatch(body);
+        sendJson(res, statusCode, payload);
+      } catch {
         sendJson(res, 400, { error: "Invalid request body." });
       }
     });

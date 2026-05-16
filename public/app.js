@@ -1,5 +1,6 @@
 const statusEl = document.querySelector("#status");
 const metaCopyEl = document.querySelector("#meta-copy");
+const bankTabsEl = document.querySelector("#bank-tabs");
 const batchSelectEl = document.querySelector("#batch-select");
 const loadBatchButton = document.querySelector("#load-batch-button");
 const questionListEl = document.querySelector("#question-list");
@@ -11,8 +12,8 @@ const finalScorePanelEl = document.querySelector("#final-score-panel");
 const finalScoreGridEl = document.querySelector("#final-score-grid");
 const nextBatchButton = document.querySelector("#next-batch-button");
 
-const batchSize = 20;
 let quizMeta = null;
+let currentBankId = null;
 let currentBatch = null;
 let selectedAnswers = new Map();
 let answeredIds = new Set();
@@ -35,11 +36,16 @@ async function apiRequest(url, options = {}) {
   return payload;
 }
 
+function getCurrentBank() {
+  return quizMeta?.banks?.find((bank) => bank.id === currentBankId) || null;
+}
+
 function updateSummary() {
+  const currentBank = getCurrentBank();
   const answered = answeredIds.size;
   progressCopyEl.textContent = `${answered} / ${currentBatch?.questions?.length || 0} answered`;
   scoreCopyEl.textContent = `${correctCount} correct`;
-  batchCopyEl.textContent = `Batch ${currentBatch?.batchNumber || 1} of ${currentBatch?.totalBatches || 1}`;
+  batchCopyEl.textContent = `${currentBank?.title || "Question Bank"} • Batch ${currentBatch?.batchNumber || 1} of ${currentBatch?.totalBatches || 1}`;
 }
 
 function buildFinalScoreCard(label, value) {
@@ -62,7 +68,7 @@ async function scoreCurrentBatch() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ answers }),
+    body: JSON.stringify({ bankId: currentBankId, answers }),
   });
 }
 
@@ -87,6 +93,18 @@ function maybeFinalizeBatch() {
     return;
   }
   finalizeBatch();
+}
+
+function renderLocalFeedback(feedbackEl, question, selectedKey) {
+  const correctAnswerText = question.options.find((item) => item.key === question.correctOption)?.text || "";
+  if (selectedKey === question.correctOption) {
+    feedbackEl.className = "answer-feedback answer-feedback-correct";
+    feedbackEl.textContent = `Correct. ${question.correctOption}: ${correctAnswerText}`;
+    return;
+  }
+
+  feedbackEl.className = "answer-feedback answer-feedback-incorrect";
+  feedbackEl.textContent = `Incorrect. Correct answer: ${question.correctOption}: ${correctAnswerText}`;
 }
 
 function createQuestionCard(question, index) {
@@ -142,17 +160,9 @@ function createQuestionCard(question, index) {
 
       if (selectedKey === question.correctOption) {
         correctCount += 1;
-        feedbackEl.className = "answer-feedback answer-feedback-correct";
-        feedbackEl.textContent = `Correct. ${question.correctOption}: ${
-          question.options.find((item) => item.key === question.correctOption)?.text || ""
-        }`;
-      } else {
-        feedbackEl.className = "answer-feedback answer-feedback-incorrect";
-        feedbackEl.textContent = `Incorrect. Correct answer: ${question.correctOption}: ${
-          question.options.find((item) => item.key === question.correctOption)?.text || ""
-        }`;
       }
 
+      renderLocalFeedback(feedbackEl, question, selectedKey);
       feedbackEl.classList.remove("hidden");
       markOptionStyles(selectedKey);
       lockQuestion();
@@ -178,19 +188,53 @@ function renderBatch() {
   updateSummary();
 }
 
-async function loadBatch(batchNumber) {
+function renderBankTabs() {
+  bankTabsEl.innerHTML = "";
+  quizMeta.banks.forEach((bank) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "bank-tab-button";
+    button.dataset.bankId = bank.id;
+    button.textContent = bank.title;
+    button.setAttribute("aria-pressed", String(bank.id === currentBankId));
+    if (bank.id === currentBankId) {
+      button.classList.add("active");
+    }
+    button.addEventListener("click", () => {
+      if (bank.id === currentBankId) {
+        return;
+      }
+      loadBank(bank.id);
+    });
+    bankTabsEl.appendChild(button);
+  });
+}
+
+function populateBatchSelect(bank) {
+  batchSelectEl.innerHTML = "";
+  for (let index = 1; index <= bank.totalBatches; index += 1) {
+    const option = document.createElement("option");
+    option.value = String(index);
+    option.textContent = `Batch ${index}`;
+    batchSelectEl.appendChild(option);
+  }
+}
+
+async function loadBatch(bankId, batchNumber) {
   loadBatchButton.disabled = true;
   nextBatchButton.disabled = true;
   setStatus(`Loading batch ${batchNumber}...`);
 
   try {
-    currentBatch = await apiRequest(`/api/quiz/batch?batch=${batchNumber}&size=${batchSize}`);
+    currentBatch = await apiRequest(`/api/quiz/batch?bank=${encodeURIComponent(bankId)}&batch=${batchNumber}`);
+    currentBankId = currentBatch.bankId;
     selectedAnswers = new Map();
     answeredIds = new Set();
     correctCount = 0;
     batchSelectEl.value = String(currentBatch.batchNumber);
+    renderBankTabs();
     renderBatch();
-    setStatus(`Batch ${currentBatch.batchNumber} loaded. Answer each question to see feedback immediately.`);
+    setStatus(`Loaded ${currentBatch.bankTitle}. Answer each question to see immediate feedback.`);
   } catch (error) {
     setStatus(error.message);
   } finally {
@@ -198,20 +242,30 @@ async function loadBatch(batchNumber) {
   }
 }
 
+async function loadBank(bankId) {
+  const bank = quizMeta?.banks?.find((item) => item.id === bankId);
+  if (!bank) {
+    return;
+  }
+  currentBankId = bank.id;
+  populateBatchSelect(bank);
+  await loadBatch(bank.id, 1);
+}
+
 async function loadMeta() {
-  setStatus("Loading question bank...");
+  setStatus("Loading question banks...");
 
   try {
     quizMeta = await apiRequest("/api/quiz/meta");
-    metaCopyEl.textContent = `${quizMeta.totalQuestions} questions available across ${quizMeta.totalBatches} batches.`;
-    batchSelectEl.innerHTML = "";
-    for (let index = 1; index <= quizMeta.totalBatches; index += 1) {
-      const option = document.createElement("option");
-      option.value = String(index);
-      option.textContent = `Batch ${index}`;
-      batchSelectEl.appendChild(option);
+    currentBankId = quizMeta.defaultBankId;
+    renderBankTabs();
+    const defaultBank = getCurrentBank();
+    if (!defaultBank) {
+      throw new Error("No question banks are available.");
     }
-    await loadBatch(1);
+    metaCopyEl.textContent = `${quizMeta.totalQuestions} questions across ${quizMeta.banks.length} tabs.`;
+    populateBatchSelect(defaultBank);
+    await loadBatch(defaultBank.id, 1);
   } catch (error) {
     setStatus(error.message);
   }
@@ -219,7 +273,7 @@ async function loadMeta() {
 
 loadBatchButton.addEventListener("click", () => {
   const batchNumber = Number.parseInt(batchSelectEl.value || "1", 10) || 1;
-  loadBatch(batchNumber);
+  loadBatch(currentBankId, batchNumber);
 });
 
 nextBatchButton.addEventListener("click", () => {
@@ -228,7 +282,7 @@ nextBatchButton.addEventListener("click", () => {
   }
   const nextBatch = currentBatch.batchNumber + 1;
   if (nextBatch <= currentBatch.totalBatches) {
-    loadBatch(nextBatch);
+    loadBatch(currentBankId, nextBatch);
   }
 });
 
