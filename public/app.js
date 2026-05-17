@@ -27,6 +27,15 @@ function formatPercent(value) {
   return `${value.toFixed(0)}%`;
 }
 
+function shuffleList(items) {
+  const copy = [...items];
+  for (let index = copy.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [copy[index], copy[swapIndex]] = [copy[swapIndex], copy[index]];
+  }
+  return copy;
+}
+
 async function apiRequest(url, options = {}) {
   const response = await fetch(url, options);
   const payload = await response.json().catch(() => ({}));
@@ -58,11 +67,16 @@ function buildFinalScoreCard(label, value) {
   return article;
 }
 
+function buildAnswerPayload(question) {
+  const response = selectedAnswers.get(question.id);
+  if (!response) {
+    return { id: question.id };
+  }
+  return { id: question.id, ...response };
+}
+
 async function scoreCurrentBatch() {
-  const answers = currentBatch.questions.map((question) => ({
-    id: question.id,
-    selectedOption: selectedAnswers.get(question.id) || "",
-  }));
+  const answers = currentBatch.questions.map((question) => buildAnswerPayload(question));
   return apiRequest("/api/quiz/score", {
     method: "POST",
     headers: {
@@ -95,19 +109,39 @@ function maybeFinalizeBatch() {
   finalizeBatch();
 }
 
-function renderLocalFeedback(feedbackEl, question, selectedKey) {
+function renderMultipleChoiceFeedback(feedbackEl, question, selectedKey) {
   const correctAnswerText = question.options.find((item) => item.key === question.correctOption)?.text || "";
   if (selectedKey === question.correctOption) {
     feedbackEl.className = "answer-feedback answer-feedback-correct";
     feedbackEl.textContent = `Correct. ${question.correctOption}: ${correctAnswerText}`;
-    return;
+    return true;
   }
 
   feedbackEl.className = "answer-feedback answer-feedback-incorrect";
   feedbackEl.textContent = `Incorrect. Correct answer: ${question.correctOption}: ${correctAnswerText}`;
+  return false;
 }
 
-function createQuestionCard(question, index) {
+function buildMatchSummary(question) {
+  const choiceLookup = new Map((question.choices || []).map((item) => [item.id, item.text]));
+  const promptLookup = new Map((question.prompts || []).map((item) => [item.id, item.text]));
+  return (question.correctMatches || [])
+    .map((item) => `${promptLookup.get(item.promptId) || item.promptId} → ${choiceLookup.get(item.choiceId) || item.choiceId}`)
+    .join(" | ");
+}
+
+function renderDragDropFeedback(feedbackEl, question, isCorrect) {
+  if (isCorrect) {
+    feedbackEl.className = "answer-feedback answer-feedback-correct";
+    feedbackEl.textContent = "Correct. All matches are in the right place.";
+    return;
+  }
+
+  feedbackEl.className = "answer-feedback answer-feedback-incorrect";
+  feedbackEl.textContent = `Incorrect. Correct matches: ${buildMatchSummary(question)}`;
+}
+
+function createMultipleChoiceCard(question, index) {
   const article = document.createElement("article");
   article.className = "question-card";
   article.innerHTML = `
@@ -155,14 +189,14 @@ function createQuestionCard(question, index) {
       }
 
       const selectedKey = option.key;
-      selectedAnswers.set(question.id, selectedKey);
+      selectedAnswers.set(question.id, { selectedOption: selectedKey });
       answeredIds.add(question.id);
 
-      if (selectedKey === question.correctOption) {
+      const isCorrect = renderMultipleChoiceFeedback(feedbackEl, question, selectedKey);
+      if (isCorrect) {
         correctCount += 1;
       }
 
-      renderLocalFeedback(feedbackEl, question, selectedKey);
       feedbackEl.classList.remove("hidden");
       markOptionStyles(selectedKey);
       lockQuestion();
@@ -173,6 +207,191 @@ function createQuestionCard(question, index) {
   });
 
   return article;
+}
+
+function createChoiceChip(choice, onDragStart) {
+  const chip = document.createElement("div");
+  chip.className = "drag-choice-chip";
+  chip.draggable = true;
+  chip.dataset.choiceId = choice.id;
+  chip.textContent = choice.text;
+  chip.addEventListener("dragstart", (event) => onDragStart(event, choice.id));
+  return chip;
+}
+
+function createDragDropCard(question, index) {
+  const article = document.createElement("article");
+  article.className = "question-card";
+  article.innerHTML = `
+    <div class="question-head">
+      <div>
+        <p class="field-label">Question ${index + 1}</p>
+        <h2>#${question.promptNumber}</h2>
+      </div>
+      <span class="topic-chip">${question.topic || "Drag & Drop"}</span>
+    </div>
+    <p class="question-stem">${question.stem}</p>
+    <div class="drag-drop-shell">
+      <div>
+        <p class="field-label">Choices</p>
+        <div class="drag-choice-pool" data-pool></div>
+      </div>
+      <div>
+        <p class="field-label">${question.type === "drag-drop-group" ? "Drop Into The Right Group" : "Match Each Prompt"}</p>
+        <div class="drag-prompt-list" data-prompt-list></div>
+      </div>
+    </div>
+    <div class="drag-drop-actions">
+      <button type="button" class="drag-check-button">Check Answer</button>
+      <button type="button" class="drag-reset-button">Reset</button>
+    </div>
+    <div class="answer-feedback hidden"></div>
+  `;
+
+  const poolEl = article.querySelector("[data-pool]");
+  const promptListEl = article.querySelector("[data-prompt-list]");
+  const checkButton = article.querySelector(".drag-check-button");
+  const resetButton = article.querySelector(".drag-reset-button");
+  const feedbackEl = article.querySelector(".answer-feedback");
+
+  const choices = shuffleList(question.choices || []);
+  const promptLookup = new Map((question.prompts || []).map((item) => [item.id, item]));
+  const choiceLookup = new Map((question.choices || []).map((item) => [item.id, item]));
+  const assignments = new Map();
+
+  (question.choices || []).forEach((choice) => {
+    assignments.set(choice.id, null);
+  });
+
+  function onDragStart(event, choiceId) {
+    if (answeredIds.has(question.id)) {
+      event.preventDefault();
+      return;
+    }
+    event.dataTransfer.setData("text/plain", choiceId);
+  }
+
+  function setDropTargetHandlers(targetEl, promptId) {
+    targetEl.addEventListener("dragover", (event) => {
+      if (!answeredIds.has(question.id)) {
+        event.preventDefault();
+      }
+    });
+    targetEl.addEventListener("drop", (event) => {
+      if (answeredIds.has(question.id)) {
+        return;
+      }
+      event.preventDefault();
+      const choiceId = event.dataTransfer.getData("text/plain");
+      if (!choiceId || !assignments.has(choiceId)) {
+        return;
+      }
+
+      if (promptId && question.type === "drag-drop") {
+        assignments.forEach((value, key) => {
+          if (value === promptId) {
+            assignments.set(key, null);
+          }
+        });
+      }
+
+      assignments.set(choiceId, promptId || null);
+      renderState();
+    });
+  }
+
+  function buildSelectedPairs() {
+    const pairs = [];
+    assignments.forEach((promptId, choiceId) => {
+      if (promptId) {
+        pairs.push({ promptId, choiceId });
+      }
+    });
+    return pairs;
+  }
+
+  function isComplete() {
+    if (question.type === "drag-drop-group") {
+      return [...assignments.values()].every((value) => Boolean(value));
+    }
+    return (question.prompts || []).every((prompt) => [...assignments.values()].includes(prompt.id));
+  }
+
+  function renderState() {
+    poolEl.innerHTML = "";
+    promptListEl.innerHTML = "";
+
+    choices.forEach((choice) => {
+      if (!assignments.get(choice.id)) {
+        poolEl.appendChild(createChoiceChip(choice, onDragStart));
+      }
+    });
+
+    (question.prompts || []).forEach((prompt) => {
+      const promptCard = document.createElement("div");
+      promptCard.className = "drag-prompt-card";
+      promptCard.innerHTML = `
+        <div class="drag-prompt-text">${prompt.text}</div>
+        <div class="drag-drop-zone" data-zone="${prompt.id}"></div>
+      `;
+
+      const zoneEl = promptCard.querySelector("[data-zone]");
+      setDropTargetHandlers(zoneEl, prompt.id);
+
+      [...assignments.entries()]
+        .filter(([, assignedPromptId]) => assignedPromptId === prompt.id)
+        .forEach(([choiceId]) => {
+          zoneEl.appendChild(createChoiceChip(choiceLookup.get(choiceId), onDragStart));
+        });
+
+      promptListEl.appendChild(promptCard);
+    });
+
+    setDropTargetHandlers(poolEl, null);
+    checkButton.disabled = !isComplete() || answeredIds.has(question.id);
+    resetButton.disabled = answeredIds.has(question.id);
+  }
+
+  checkButton.addEventListener("click", () => {
+    if (answeredIds.has(question.id) || !isComplete()) {
+      return;
+    }
+
+    const selectedPairs = buildSelectedPairs();
+    const expected = new Set((question.correctMatches || []).map((item) => `${item.promptId}:${item.choiceId}`));
+    const actual = new Set(selectedPairs.map((item) => `${item.promptId}:${item.choiceId}`));
+    const isCorrect = expected.size === actual.size && [...expected].every((item) => actual.has(item));
+
+    selectedAnswers.set(question.id, { selectedPairs });
+    answeredIds.add(question.id);
+    if (isCorrect) {
+      correctCount += 1;
+    }
+
+    renderDragDropFeedback(feedbackEl, question, isCorrect);
+    feedbackEl.classList.remove("hidden");
+    renderState();
+    updateSummary();
+    maybeFinalizeBatch();
+  });
+
+  resetButton.addEventListener("click", () => {
+    if (answeredIds.has(question.id)) {
+      return;
+    }
+    assignments.forEach((_, choiceId) => assignments.set(choiceId, null));
+    renderState();
+  });
+
+  renderState();
+  return article;
+}
+
+function createQuestionCard(question, index) {
+  if (question.type === "drag-drop" || question.type === "drag-drop-group") {
+    return createDragDropCard(question, index);
+  }
+  return createMultipleChoiceCard(question, index);
 }
 
 function renderBatch() {

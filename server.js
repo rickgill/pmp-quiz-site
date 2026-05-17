@@ -155,11 +155,7 @@ function scoreBatch(body) {
   }
 
   const answers = Array.isArray(body.answers) ? body.answers : [];
-  const answerMap = new Map(
-    answers
-      .filter((item) => item && Number.isFinite(item.id) && typeof item.selectedOption === "string")
-      .map((item) => [item.id, item.selectedOption.trim().toUpperCase()])
-  );
+  const answerMap = new Map(answers.filter((item) => item && Number.isFinite(item.id)).map((item) => [item.id, item]));
 
   const results = [];
   let correctCount = 0;
@@ -169,20 +165,50 @@ function scoreBatch(body) {
       continue;
     }
 
-    const selectedOption = answerMap.get(question.id);
-    const isCorrect = selectedOption === question.correctOption;
+    const response = answerMap.get(question.id);
+    let isCorrect = false;
+
+    if (question.type === "drag-drop" || question.type === "drag-drop-group") {
+      const expected = new Set(
+        (Array.isArray(question.correctMatches) ? question.correctMatches : []).map(
+          (item) => `${item.promptId}:${item.choiceId}`
+        )
+      );
+      const actual = new Set(
+        (Array.isArray(response?.selectedPairs) ? response.selectedPairs : []).map(
+          (item) => `${item.promptId}:${item.choiceId}`
+        )
+      );
+      isCorrect = expected.size === actual.size && [...expected].every((item) => actual.has(item));
+    } else {
+      const selectedOption = typeof response?.selectedOption === "string" ? response.selectedOption.trim().toUpperCase() : "";
+      isCorrect = selectedOption === question.correctOption;
+    }
+
     if (isCorrect) {
       correctCount += 1;
     }
 
-    results.push({
-      id: question.id,
-      promptNumber: question.promptNumber,
-      selectedOption,
-      correctOption: question.correctOption,
-      correctAnswerText: question.options.find((option) => option.key === question.correctOption)?.text || "",
-      isCorrect,
-    });
+    if (question.type === "drag-drop" || question.type === "drag-drop-group") {
+      results.push({
+        id: question.id,
+        promptNumber: question.promptNumber,
+        type: question.type,
+        selectedPairs: Array.isArray(response?.selectedPairs) ? response.selectedPairs : [],
+        correctMatches: Array.isArray(question.correctMatches) ? question.correctMatches : [],
+        isCorrect,
+      });
+    } else {
+      const selectedOption = typeof response?.selectedOption === "string" ? response.selectedOption.trim().toUpperCase() : "";
+      results.push({
+        id: question.id,
+        promptNumber: question.promptNumber,
+        selectedOption,
+        correctOption: question.correctOption,
+        correctAnswerText: question.options.find((option) => option.key === question.correctOption)?.text || "",
+        isCorrect,
+      });
+    }
   }
 
   return {

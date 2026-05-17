@@ -236,6 +236,72 @@ button:disabled {
   gap: 10px;
 }
 
+.drag-drop-shell {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.95fr) minmax(0, 1.35fr);
+  gap: 18px;
+}
+
+.drag-choice-pool,
+.drag-drop-zone {
+  min-height: 72px;
+  padding: 12px;
+  border-radius: 18px;
+  border: 1px dashed rgba(27, 36, 48, 0.24);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.drag-choice-pool {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.drag-prompt-list {
+  display: grid;
+  gap: 12px;
+}
+
+.drag-prompt-card {
+  padding: 14px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: var(--panel-strong);
+}
+
+.drag-prompt-text {
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  line-height: 1.45;
+}
+
+.drag-drop-zone {
+  display: grid;
+  gap: 8px;
+}
+
+.drag-choice-chip {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(27, 36, 48, 0.14);
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  cursor: grab;
+}
+
+.drag-drop-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.drag-reset-button {
+  background: var(--panel-strong);
+  color: var(--ink);
+}
+
 .option-button {
   display: grid;
   grid-template-columns: 40px 1fr;
@@ -319,6 +385,10 @@ button:disabled {
   .toolbar,
   .batch-summary,
   .score-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drag-drop-shell {
     grid-template-columns: 1fr;
   }
 
