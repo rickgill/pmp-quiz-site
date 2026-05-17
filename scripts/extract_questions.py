@@ -39,6 +39,8 @@ def normalize_text(value: str) -> str:
 
 
 def clean_inline_block_text(value: str) -> str:
+    value = value.replace("GO_TO_ANSWER", " ")
+    value = value.replace("Go to the Answer", " ")
     value = value.replace("A.\n", "A. ")
     value = value.replace("B.\n", "B. ")
     value = value.replace("C.\n", "C. ")

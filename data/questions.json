@@ -35900,7 +35900,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -35926,7 +35926,7 @@
             },
             {
               "key": "D",
-              "text": "Parameters GO_TO_ANSWER"
+              "text": "Parameters"
             }
           ],
           "correctOption": "B"
@@ -35952,7 +35952,7 @@
             },
             {
               "key": "D",
-              "text": "Requirement traceability matrix GO_TO_ANSWER"
+              "text": "Requirement traceability matrix"
             }
           ],
           "correctOption": "A"
@@ -35978,7 +35978,7 @@
             },
             {
               "key": "D",
-              "text": "Control scope GO_TO_ANSWER"
+              "text": "Control scope"
             }
           ],
           "correctOption": "B"
@@ -36004,7 +36004,7 @@
             },
             {
               "key": "D",
-              "text": "0.67 GO_TO_ANSWER"
+              "text": "0.67"
             }
           ],
           "correctOption": "D"
@@ -36030,7 +36030,7 @@
             },
             {
               "key": "D",
-              "text": "Control scope GO_TO_ANSWER"
+              "text": "Control scope"
             }
           ],
           "correctOption": "A"
@@ -36056,7 +36056,7 @@
             },
             {
               "key": "D",
-              "text": "Issue log GO_TO_ANSWER"
+              "text": "Issue log"
             }
           ],
           "correctOption": "C"
@@ -36082,7 +36082,7 @@
             },
             {
               "key": "D",
-              "text": "Implementation status for change requests GO_TO_ANSWER"
+              "text": "Implementation status for change requests"
             }
           ],
           "correctOption": "A"
@@ -36108,7 +36108,7 @@
             },
             {
               "key": "D",
-              "text": "Change the critical path to reflect the risk impact GO_TO_ANSWER"
+              "text": "Change the critical path to reflect the risk impact"
             }
           ],
           "correctOption": "B"
@@ -36134,7 +36134,7 @@
             },
             {
               "key": "D",
-              "text": "CPIF GO_TO_ANSWER"
+              "text": "CPIF"
             }
           ],
           "correctOption": "B"
@@ -36160,7 +36160,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "D"
@@ -36186,7 +36186,7 @@
             },
             {
               "key": "D",
-              "text": "Responsibility, transparency, fairness, honesty GO_TO_ANSWER"
+              "text": "Responsibility, transparency, fairness, honesty"
             }
           ],
           "correctOption": "A"
@@ -36212,7 +36212,7 @@
             },
             {
               "key": "D",
-              "text": "Configuration verification and audit GO_TO_ANSWER"
+              "text": "Configuration verification and audit"
             }
           ],
           "correctOption": "B"
@@ -36238,7 +36238,7 @@
             },
             {
               "key": "D",
-              "text": "Memos GO_TO_ANSWER"
+              "text": "Memos"
             }
           ],
           "correctOption": "D"
@@ -36264,7 +36264,7 @@
             },
             {
               "key": "D",
-              "text": "Power, influence, legitimacy GO_TO_ANSWER"
+              "text": "Power, influence, legitimacy"
             }
           ],
           "correctOption": "A"
@@ -36290,7 +36290,7 @@
             },
             {
               "key": "D",
-              "text": "Symmetric estimate GO_TO_ANSWER"
+              "text": "Symmetric estimate"
             }
           ],
           "correctOption": "B"
@@ -36316,7 +36316,7 @@
             },
             {
               "key": "D",
-              "text": "Control scope GO_TO_ANSWER"
+              "text": "Control scope"
             }
           ],
           "correctOption": "B"
@@ -36342,7 +36342,7 @@
             },
             {
               "key": "D",
-              "text": "RBS GO_TO_ANSWER"
+              "text": "RBS"
             }
           ],
           "correctOption": "B"
@@ -36368,7 +36368,7 @@
             },
             {
               "key": "D",
-              "text": "Informal verbal GO_TO_ANSWER"
+              "text": "Informal verbal"
             }
           ],
           "correctOption": "D"
@@ -36394,7 +36394,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -36420,7 +36420,7 @@
             },
             {
               "key": "D",
-              "text": "FFP GO_TO_ANSWER"
+              "text": "FFP"
             }
           ],
           "correctOption": "C"
@@ -36446,7 +36446,7 @@
             },
             {
               "key": "D",
-              "text": "Influence / Impact grid GO_TO_ANSWER"
+              "text": "Influence / Impact grid"
             }
           ],
           "correctOption": "C"
@@ -36472,7 +36472,7 @@
             },
             {
               "key": "D",
-              "text": "FPIF GO_TO_ANSWER"
+              "text": "FPIF"
             }
           ],
           "correctOption": "C"
@@ -36498,7 +36498,7 @@
             },
             {
               "key": "D",
-              "text": "Benefit analysis GO_TO_ANSWER"
+              "text": "Benefit analysis"
             }
           ],
           "correctOption": "C"
@@ -36524,7 +36524,7 @@
             },
             {
               "key": "D",
-              "text": "Name of the sponsor, name of the project manager, schedule baseline, summary budget GO_TO_ANSWER"
+              "text": "Name of the sponsor, name of the project manager, schedule baseline, summary budget"
             }
           ],
           "correctOption": "A"
@@ -36550,7 +36550,7 @@
             },
             {
               "key": "D",
-              "text": "Stakeholder register update GO_TO_ANSWER"
+              "text": "Stakeholder register update"
             }
           ],
           "correctOption": "C"
@@ -36576,7 +36576,7 @@
             },
             {
               "key": "D",
-              "text": "Start to Finish (SF) GO_TO_ANSWER"
+              "text": "Start to Finish (SF)"
             }
           ],
           "correctOption": "C"
@@ -36602,7 +36602,7 @@
             },
             {
               "key": "D",
-              "text": "100,000 USD GO_TO_ANSWER"
+              "text": "100,000 USD"
             }
           ],
           "correctOption": "C"
@@ -36628,7 +36628,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -36654,7 +36654,7 @@
             },
             {
               "key": "D",
-              "text": "Not supportive GO_TO_ANSWER"
+              "text": "Not supportive"
             }
           ],
           "correctOption": "A"
@@ -36680,7 +36680,7 @@
             },
             {
               "key": "D",
-              "text": "Number of stakeholders GO_TO_ANSWER"
+              "text": "Number of stakeholders"
             }
           ],
           "correctOption": "D"
@@ -36706,7 +36706,7 @@
             },
             {
               "key": "D",
-              "text": "Primary risk GO_TO_ANSWER"
+              "text": "Primary risk"
             }
           ],
           "correctOption": "B"
@@ -36732,7 +36732,7 @@
             },
             {
               "key": "D",
-              "text": "FPIF GO_TO_ANSWER"
+              "text": "FPIF"
             }
           ],
           "correctOption": "C"
@@ -36758,7 +36758,7 @@
             },
             {
               "key": "D",
-              "text": "Salience model GO_TO_ANSWER"
+              "text": "Salience model"
             }
           ],
           "correctOption": "A"
@@ -36784,7 +36784,7 @@
             },
             {
               "key": "D",
-              "text": "You will not cross the speed limit but will break the signals GO_TO_ANSWER"
+              "text": "You will not cross the speed limit but will break the signals"
             }
           ],
           "correctOption": "B"
@@ -36810,7 +36810,7 @@
             },
             {
               "key": "D",
-              "text": "Projectized GO_TO_ANSWER"
+              "text": "Projectized"
             }
           ],
           "correctOption": "C"
@@ -36836,7 +36836,7 @@
             },
             {
               "key": "D",
-              "text": "Enterprise environmental factors GO_TO_ANSWER"
+              "text": "Enterprise environmental factors"
             }
           ],
           "correctOption": "C"
@@ -36862,7 +36862,7 @@
             },
             {
               "key": "D",
-              "text": "Define requirements GO_TO_ANSWER"
+              "text": "Define requirements"
             }
           ],
           "correctOption": "C"
@@ -36888,7 +36888,7 @@
             },
             {
               "key": "D",
-              "text": "Internal dependency GO_TO_ANSWER"
+              "text": "Internal dependency"
             }
           ],
           "correctOption": "A"
@@ -36914,7 +36914,7 @@
             },
             {
               "key": "D",
-              "text": "62,500 USD GO_TO_ANSWER"
+              "text": "62,500 USD"
             }
           ],
           "correctOption": "D"
@@ -36940,7 +36940,7 @@
             },
             {
               "key": "D",
-              "text": "c-chart GO_TO_ANSWER"
+              "text": "c-chart"
             }
           ],
           "correctOption": "A"
@@ -36966,7 +36966,7 @@
             },
             {
               "key": "D",
-              "text": "Personnel Reason GO_TO_ANSWER"
+              "text": "Personnel Reason"
             }
           ],
           "correctOption": "D"
@@ -36992,7 +36992,7 @@
             },
             {
               "key": "D",
-              "text": "21 GO_TO_ANSWER"
+              "text": "21"
             }
           ],
           "correctOption": "D"
@@ -37018,7 +37018,7 @@
             },
             {
               "key": "D",
-              "text": "Corrective action GO_TO_ANSWER"
+              "text": "Corrective action"
             }
           ],
           "correctOption": "C"
@@ -37044,7 +37044,7 @@
             },
             {
               "key": "D",
-              "text": "Define scope GO_TO_ANSWER"
+              "text": "Define scope"
             }
           ],
           "correctOption": "B"
@@ -37070,7 +37070,7 @@
             },
             {
               "key": "D",
-              "text": "You will look into the Stakeholder Register GO_TO_ANSWER"
+              "text": "You will look into the Stakeholder Register"
             }
           ],
           "correctOption": "D"
@@ -37096,7 +37096,7 @@
             },
             {
               "key": "D",
-              "text": "You will never pay the bribe GO_TO_ANSWER"
+              "text": "You will never pay the bribe"
             }
           ],
           "correctOption": "D"
@@ -37122,7 +37122,7 @@
             },
             {
               "key": "D",
-              "text": "Program coordinator GO_TO_ANSWER"
+              "text": "Program coordinator"
             }
           ],
           "correctOption": "A"
@@ -37148,7 +37148,7 @@
             },
             {
               "key": "D",
-              "text": "Control scope GO_TO_ANSWER"
+              "text": "Control scope"
             }
           ],
           "correctOption": "B"
@@ -37174,7 +37174,7 @@
             },
             {
               "key": "D",
-              "text": "Affinity diagram GO_TO_ANSWER"
+              "text": "Affinity diagram"
             }
           ],
           "correctOption": "C"
@@ -37200,7 +37200,7 @@
             },
             {
               "key": "D",
-              "text": "Manage project knowledge GO_TO_ANSWER"
+              "text": "Manage project knowledge"
             }
           ],
           "correctOption": "D"
@@ -37226,7 +37226,7 @@
             },
             {
               "key": "D",
-              "text": "If the project schedule is fixed or based on events GO_TO_ANSWER"
+              "text": "If the project schedule is fixed or based on events"
             }
           ],
           "correctOption": "C"
@@ -37252,7 +37252,7 @@
             },
             {
               "key": "D",
-              "text": "No inventory GO_TO_ANSWER"
+              "text": "No inventory"
             }
           ],
           "correctOption": "D"
@@ -37278,7 +37278,7 @@
             },
             {
               "key": "D",
-              "text": "Safety GO_TO_ANSWER"
+              "text": "Safety"
             }
           ],
           "correctOption": "A"
@@ -37304,7 +37304,7 @@
             },
             {
               "key": "D",
-              "text": "Informal verbal GO_TO_ANSWER"
+              "text": "Informal verbal"
             }
           ],
           "correctOption": "A"
@@ -37330,7 +37330,7 @@
             },
             {
               "key": "D",
-              "text": "70,000 USD GO_TO_ANSWER"
+              "text": "70,000 USD"
             }
           ],
           "correctOption": "D"
@@ -37356,7 +37356,7 @@
             },
             {
               "key": "D",
-              "text": "Supportive GO_TO_ANSWER"
+              "text": "Supportive"
             }
           ],
           "correctOption": "C"
@@ -37382,7 +37382,7 @@
             },
             {
               "key": "D",
-              "text": "Fairness: mandatory standards GO_TO_ANSWER"
+              "text": "Fairness: mandatory standards"
             }
           ],
           "correctOption": "A"
@@ -37408,7 +37408,7 @@
             },
             {
               "key": "D",
-              "text": "Control scope GO_TO_ANSWER"
+              "text": "Control scope"
             }
           ],
           "correctOption": "B"
@@ -37434,7 +37434,7 @@
             },
             {
               "key": "D",
-              "text": "Procurement document GO_TO_ANSWER"
+              "text": "Procurement document"
             }
           ],
           "correctOption": "B"
@@ -37460,7 +37460,7 @@
             },
             {
               "key": "D",
-              "text": "It is a hierarchical breakdown of project resources GO_TO_ANSWER"
+              "text": "It is a hierarchical breakdown of project resources"
             }
           ],
           "correctOption": "A"
@@ -37486,7 +37486,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -37512,7 +37512,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -37538,7 +37538,7 @@
             },
             {
               "key": "D",
-              "text": "Act GO_TO_ANSWER"
+              "text": "Act"
             }
           ],
           "correctOption": "B"
@@ -37564,7 +37564,7 @@
             },
             {
               "key": "D",
-              "text": "Develop project team GO_TO_ANSWER"
+              "text": "Develop project team"
             }
           ],
           "correctOption": "B"
@@ -37590,7 +37590,7 @@
             },
             {
               "key": "D",
-              "text": "Non-verbal communication GO_TO_ANSWER"
+              "text": "Non-verbal communication"
             }
           ],
           "correctOption": "D"
@@ -37616,7 +37616,7 @@
             },
             {
               "key": "D",
-              "text": "You will ignore it GO_TO_ANSWER"
+              "text": "You will ignore it"
             }
           ],
           "correctOption": "C"
@@ -37642,7 +37642,7 @@
             },
             {
               "key": "D",
-              "text": "200 GO_TO_ANSWER"
+              "text": "200"
             }
           ],
           "correctOption": "D"
@@ -37668,7 +37668,7 @@
             },
             {
               "key": "D",
-              "text": "Change log GO_TO_ANSWER"
+              "text": "Change log"
             }
           ],
           "correctOption": "B"
@@ -37694,7 +37694,7 @@
             },
             {
               "key": "D",
-              "text": "Chapter 5: Honesty GO_TO_ANSWER"
+              "text": "Chapter 5: Honesty"
             }
           ],
           "correctOption": "D"
@@ -37720,7 +37720,7 @@
             },
             {
               "key": "D",
-              "text": "Symmetric curve GO_TO_ANSWER"
+              "text": "Symmetric curve"
             }
           ],
           "correctOption": "C"
@@ -37746,7 +37746,7 @@
             },
             {
               "key": "D",
-              "text": "Project sponsor GO_TO_ANSWER"
+              "text": "Project sponsor"
             }
           ],
           "correctOption": "C"
@@ -37772,7 +37772,7 @@
             },
             {
               "key": "D",
-              "text": "Product scope GO_TO_ANSWER"
+              "text": "Product scope"
             }
           ],
           "correctOption": "A"
@@ -37798,7 +37798,7 @@
             },
             {
               "key": "D",
-              "text": "15 GO_TO_ANSWER"
+              "text": "15"
             }
           ],
           "correctOption": "B"
@@ -37824,7 +37824,7 @@
             },
             {
               "key": "D",
-              "text": "Overhead cost GO_TO_ANSWER"
+              "text": "Overhead cost"
             }
           ],
           "correctOption": "D"
@@ -37850,7 +37850,7 @@
             },
             {
               "key": "D",
-              "text": "KAIZEN GO_TO_ANSWER"
+              "text": "KAIZEN"
             }
           ],
           "correctOption": "D"
@@ -37876,7 +37876,7 @@
             },
             {
               "key": "D",
-              "text": "Penalty power GO_TO_ANSWER"
+              "text": "Penalty power"
             }
           ],
           "correctOption": "B"
@@ -37902,7 +37902,7 @@
             },
             {
               "key": "D",
-              "text": "Throw a party to celebrate the completion of the project GO_TO_ANSWER"
+              "text": "Throw a party to celebrate the completion of the project"
             }
           ],
           "correctOption": "C"
@@ -37928,7 +37928,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -37954,7 +37954,7 @@
             },
             {
               "key": "D",
-              "text": "PO GO_TO_ANSWER"
+              "text": "PO"
             }
           ],
           "correctOption": "A"
@@ -37980,7 +37980,7 @@
             },
             {
               "key": "D",
-              "text": "Meetings GO_TO_ANSWER"
+              "text": "Meetings"
             }
           ],
           "correctOption": "C"
@@ -38006,7 +38006,7 @@
             },
             {
               "key": "D",
-              "text": "To be on the safe side, you will increase it by 15% GO_TO_ANSWER"
+              "text": "To be on the safe side, you will increase it by 15%"
             }
           ],
           "correctOption": "C"
@@ -38032,7 +38032,7 @@
             },
             {
               "key": "D",
-              "text": "Delphi technique GO_TO_ANSWER"
+              "text": "Delphi technique"
             }
           ],
           "correctOption": "D"
@@ -38058,7 +38058,7 @@
             },
             {
               "key": "D",
-              "text": "Ask for the budget GO_TO_ANSWER"
+              "text": "Ask for the budget"
             }
           ],
           "correctOption": "A"
@@ -38084,7 +38084,7 @@
             },
             {
               "key": "D",
-              "text": "Project schedule GO_TO_ANSWER"
+              "text": "Project schedule"
             }
           ],
           "correctOption": "C"
@@ -38110,7 +38110,7 @@
             },
             {
               "key": "D",
-              "text": "You will need to add buffers on some paths GO_TO_ANSWER"
+              "text": "You will need to add buffers on some paths"
             }
           ],
           "correctOption": "A"
@@ -38136,7 +38136,7 @@
             },
             {
               "key": "D",
-              "text": "(-25) to (+25%) GO_TO_ANSWER"
+              "text": "(-25) to (+25%)"
             }
           ],
           "correctOption": "A"
@@ -38162,7 +38162,7 @@
             },
             {
               "key": "D",
-              "text": "Delphi technique GO_TO_ANSWER"
+              "text": "Delphi technique"
             }
           ],
           "correctOption": "B"
@@ -38188,7 +38188,7 @@
             },
             {
               "key": "D",
-              "text": "All team members GO_TO_ANSWER"
+              "text": "All team members"
             }
           ],
           "correctOption": "D"
@@ -38214,7 +38214,7 @@
             },
             {
               "key": "D",
-              "text": "Para-lingual GO_TO_ANSWER"
+              "text": "Para-lingual"
             }
           ],
           "correctOption": "C"
@@ -38240,7 +38240,7 @@
             },
             {
               "key": "D",
-              "text": "Sensitive analysis GO_TO_ANSWER"
+              "text": "Sensitive analysis"
             }
           ],
           "correctOption": "A"
@@ -38266,7 +38266,7 @@
             },
             {
               "key": "D",
-              "text": "Plan procurement GO_TO_ANSWER"
+              "text": "Plan procurement"
             }
           ],
           "correctOption": "D"
@@ -38292,7 +38292,7 @@
             },
             {
               "key": "D",
-              "text": "Change request GO_TO_ANSWER"
+              "text": "Change request"
             }
           ],
           "correctOption": "A"
@@ -38318,7 +38318,7 @@
             },
             {
               "key": "D",
-              "text": "Start watching him GO_TO_ANSWER"
+              "text": "Start watching him"
             }
           ],
           "correctOption": "C"
@@ -38344,7 +38344,7 @@
             },
             {
               "key": "D",
-              "text": "Organic GO_TO_ANSWER"
+              "text": "Organic"
             }
           ],
           "correctOption": "D"
@@ -38370,7 +38370,7 @@
             },
             {
               "key": "D",
-              "text": "Monitoring and controlling the work GO_TO_ANSWER"
+              "text": "Monitoring and controlling the work"
             }
           ],
           "correctOption": "D"
@@ -38396,7 +38396,7 @@
             },
             {
               "key": "D",
-              "text": "Opportunity GO_TO_ANSWER"
+              "text": "Opportunity"
             }
           ],
           "correctOption": "C"
@@ -38422,7 +38422,7 @@
             },
             {
               "key": "D",
-              "text": "All of the above GO_TO_ANSWER"
+              "text": "All of the above"
             }
           ],
           "correctOption": "C"
@@ -38448,7 +38448,7 @@
             },
             {
               "key": "D",
-              "text": "The new projected time to complete the project within the approved budget GO_TO_ANSWER"
+              "text": "The new projected time to complete the project within the approved budget"
             }
           ],
           "correctOption": "A"
@@ -38474,7 +38474,7 @@
             },
             {
               "key": "D",
-              "text": "To determine if the process is stable GO_TO_ANSWER"
+              "text": "To determine if the process is stable"
             }
           ],
           "correctOption": "D"
@@ -38500,7 +38500,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -38526,7 +38526,7 @@
             },
             {
               "key": "D",
-              "text": "Outward GO_TO_ANSWER"
+              "text": "Outward"
             }
           ],
           "correctOption": "C"
@@ -38552,7 +38552,7 @@
             },
             {
               "key": "D",
-              "text": "Delphi technique GO_TO_ANSWER"
+              "text": "Delphi technique"
             }
           ],
           "correctOption": "D"
@@ -38578,7 +38578,7 @@
             },
             {
               "key": "D",
-              "text": "Manage quality GO_TO_ANSWER"
+              "text": "Manage quality"
             }
           ],
           "correctOption": "A"
@@ -38604,7 +38604,7 @@
             },
             {
               "key": "D",
-              "text": "Ask him for more detail GO_TO_ANSWER"
+              "text": "Ask him for more detail"
             }
           ],
           "correctOption": "C"
@@ -38630,7 +38630,7 @@
             },
             {
               "key": "D",
-              "text": "Cost plus fixed free GO_TO_ANSWER"
+              "text": "Cost plus fixed free"
             }
           ],
           "correctOption": "B"
@@ -38656,7 +38656,7 @@
             },
             {
               "key": "D",
-              "text": "You will not allow any change request GO_TO_ANSWER"
+              "text": "You will not allow any change request"
             }
           ],
           "correctOption": "A"
@@ -38682,7 +38682,7 @@
             },
             {
               "key": "D",
-              "text": "Opportunity GO_TO_ANSWER"
+              "text": "Opportunity"
             }
           ],
           "correctOption": "A"
@@ -38708,7 +38708,7 @@
             },
             {
               "key": "D",
-              "text": "PERT GO_TO_ANSWER"
+              "text": "PERT"
             }
           ],
           "correctOption": "D"
@@ -38734,7 +38734,7 @@
             },
             {
               "key": "D",
-              "text": "Discretionary cost GO_TO_ANSWER"
+              "text": "Discretionary cost"
             }
           ],
           "correctOption": "B"
@@ -38760,7 +38760,7 @@
             },
             {
               "key": "D",
-              "text": "All of above GO_TO_ANSWER"
+              "text": "All of above"
             }
           ],
           "correctOption": "A"
@@ -38786,7 +38786,7 @@
             },
             {
               "key": "D",
-              "text": "Review the project management plan GO_TO_ANSWER"
+              "text": "Review the project management plan"
             }
           ],
           "correctOption": "C"
@@ -38812,7 +38812,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -38838,7 +38838,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -38864,7 +38864,7 @@
             },
             {
               "key": "D",
-              "text": "Verify Scope GO_TO_ANSWER"
+              "text": "Verify Scope"
             }
           ],
           "correctOption": "B"
@@ -38890,7 +38890,7 @@
             },
             {
               "key": "D",
-              "text": "Humiliate him in front of others GO_TO_ANSWER"
+              "text": "Humiliate him in front of others"
             }
           ],
           "correctOption": "C"
@@ -38916,7 +38916,7 @@
             },
             {
               "key": "D",
-              "text": "Standards are guidance, while regulations are mandatory GO_TO_ANSWER"
+              "text": "Standards are guidance, while regulations are mandatory"
             }
           ],
           "correctOption": "D"
@@ -38942,7 +38942,7 @@
             },
             {
               "key": "D",
-              "text": "All of the above GO_TO_ANSWER"
+              "text": "All of the above"
             }
           ],
           "correctOption": "C"
@@ -38968,7 +38968,7 @@
             },
             {
               "key": "D",
-              "text": "Dictatorship GO_TO_ANSWER"
+              "text": "Dictatorship"
             }
           ],
           "correctOption": "B"
@@ -38994,7 +38994,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -39020,7 +39020,7 @@
             },
             {
               "key": "D",
-              "text": "Manage quality GO_TO_ANSWER"
+              "text": "Manage quality"
             }
           ],
           "correctOption": "D"
@@ -39046,7 +39046,7 @@
             },
             {
               "key": "D",
-              "text": "Norming GO_TO_ANSWER"
+              "text": "Norming"
             }
           ],
           "correctOption": "D"
@@ -39072,7 +39072,7 @@
             },
             {
               "key": "D",
-              "text": "Second team member GO_TO_ANSWER"
+              "text": "Second team member"
             }
           ],
           "correctOption": "C"
@@ -39098,7 +39098,7 @@
             },
             {
               "key": "D",
-              "text": "The process is under control GO_TO_ANSWER"
+              "text": "The process is under control"
             }
           ],
           "correctOption": "B"
@@ -39124,7 +39124,7 @@
             },
             {
               "key": "D",
-              "text": "Control procurements GO_TO_ANSWER"
+              "text": "Control procurements"
             }
           ],
           "correctOption": "D"
@@ -39150,7 +39150,7 @@
             },
             {
               "key": "D",
-              "text": "Preventive action GO_TO_ANSWER"
+              "text": "Preventive action"
             }
           ],
           "correctOption": "B"
@@ -39176,7 +39176,7 @@
             },
             {
               "key": "D",
-              "text": "Helping GO_TO_ANSWER"
+              "text": "Helping"
             }
           ],
           "correctOption": "B"
@@ -39202,7 +39202,7 @@
             },
             {
               "key": "D",
-              "text": "Improper scope statement GO_TO_ANSWER"
+              "text": "Improper scope statement"
             }
           ],
           "correctOption": "C"
@@ -39228,7 +39228,7 @@
             },
             {
               "key": "D",
-              "text": "Scope management plan GO_TO_ANSWER"
+              "text": "Scope management plan"
             }
           ],
           "correctOption": "B"
@@ -39254,7 +39254,7 @@
             },
             {
               "key": "D",
-              "text": "Analogous GO_TO_ANSWER"
+              "text": "Analogous"
             }
           ],
           "correctOption": "A"
@@ -39280,7 +39280,7 @@
             },
             {
               "key": "D",
-              "text": "Control scope GO_TO_ANSWER"
+              "text": "Control scope"
             }
           ],
           "correctOption": "B"
@@ -39306,7 +39306,7 @@
             },
             {
               "key": "D",
-              "text": "Forming GO_TO_ANSWER"
+              "text": "Forming"
             }
           ],
           "correctOption": "A"
@@ -39332,7 +39332,7 @@
             },
             {
               "key": "D",
-              "text": "The sound of the vacuum cleaner outside the room GO_TO_ANSWER"
+              "text": "The sound of the vacuum cleaner outside the room"
             }
           ],
           "correctOption": "D"
@@ -39358,7 +39358,7 @@
             },
             {
               "key": "D",
-              "text": "Accept GO_TO_ANSWER"
+              "text": "Accept"
             }
           ],
           "correctOption": "C"
@@ -39384,7 +39384,7 @@
             },
             {
               "key": "D",
-              "text": "Above PTA, the cost will be shared by a set ratio GO_TO_ANSWER"
+              "text": "Above PTA, the cost will be shared by a set ratio"
             }
           ],
           "correctOption": "A"
@@ -39410,7 +39410,7 @@
             },
             {
               "key": "D",
-              "text": "RACI matrix GO_TO_ANSWER"
+              "text": "RACI matrix"
             }
           ],
           "correctOption": "C"
@@ -39436,7 +39436,7 @@
             },
             {
               "key": "D",
-              "text": "Scope statement, WBS, schedule baseline GO_TO_ANSWER"
+              "text": "Scope statement, WBS, schedule baseline"
             }
           ],
           "correctOption": "B"
@@ -39462,7 +39462,7 @@
             },
             {
               "key": "D",
-              "text": "RAM chart GO_TO_ANSWER"
+              "text": "RAM chart"
             }
           ],
           "correctOption": "A"
@@ -39488,7 +39488,7 @@
             },
             {
               "key": "D",
-              "text": "Control cost GO_TO_ANSWER"
+              "text": "Control cost"
             }
           ],
           "correctOption": "B"
@@ -39514,7 +39514,7 @@
             },
             {
               "key": "D",
-              "text": "Tornado diagram GO_TO_ANSWER"
+              "text": "Tornado diagram"
             }
           ],
           "correctOption": "B"
@@ -39540,7 +39540,7 @@
             },
             {
               "key": "D",
-              "text": "Recruit some new member GO_TO_ANSWER"
+              "text": "Recruit some new member"
             }
           ],
           "correctOption": "C"
@@ -39566,7 +39566,7 @@
             },
             {
               "key": "D",
-              "text": "Triangular communication GO_TO_ANSWER"
+              "text": "Triangular communication"
             }
           ],
           "correctOption": "B"
@@ -39592,7 +39592,7 @@
             },
             {
               "key": "D",
-              "text": "Mitigate GO_TO_ANSWER"
+              "text": "Mitigate"
             }
           ],
           "correctOption": "A"
@@ -39618,7 +39618,7 @@
             },
             {
               "key": "D",
-              "text": "CPAF GO_TO_ANSWER"
+              "text": "CPAF"
             }
           ],
           "correctOption": "D"
@@ -39644,7 +39644,7 @@
             },
             {
               "key": "D",
-              "text": "Convince your management to discuss the issue with the client GO_TO_ANSWER"
+              "text": "Convince your management to discuss the issue with the client"
             }
           ],
           "correctOption": "B"
@@ -39670,7 +39670,7 @@
             },
             {
               "key": "D",
-              "text": "Statement of work GO_TO_ANSWER"
+              "text": "Statement of work"
             }
           ],
           "correctOption": "A"
@@ -39696,7 +39696,7 @@
             },
             {
               "key": "D",
-              "text": "Meeting GO_TO_ANSWER"
+              "text": "Meeting"
             }
           ],
           "correctOption": "B"
@@ -39722,7 +39722,7 @@
             },
             {
               "key": "D",
-              "text": "(BAC–EV) / (EAC–AC) GO_TO_ANSWER"
+              "text": "(BAC–EV) / (EAC–AC)"
             }
           ],
           "correctOption": "D"
@@ -39748,7 +39748,7 @@
             },
             {
               "key": "D",
-              "text": "Destructive testing loss GO_TO_ANSWER"
+              "text": "Destructive testing loss"
             }
           ],
           "correctOption": "D"
@@ -39774,7 +39774,7 @@
             },
             {
               "key": "D",
-              "text": "Problem Solving GO_TO_ANSWER"
+              "text": "Problem Solving"
             }
           ],
           "correctOption": "C"
@@ -39800,7 +39800,7 @@
             },
             {
               "key": "D",
-              "text": "Video conferencing GO_TO_ANSWER"
+              "text": "Video conferencing"
             }
           ],
           "correctOption": "D"
@@ -39826,7 +39826,7 @@
             },
             {
               "key": "D",
-              "text": "Develop the cost baseline GO_TO_ANSWER"
+              "text": "Develop the cost baseline"
             }
           ],
           "correctOption": "A"
@@ -39852,7 +39852,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -39878,7 +39878,7 @@
             },
             {
               "key": "D",
-              "text": "RACI matrix GO_TO_ANSWER"
+              "text": "RACI matrix"
             }
           ],
           "correctOption": "C"
@@ -39904,7 +39904,7 @@
             },
             {
               "key": "D",
-              "text": "Path ABCD GO_TO_ANSWER"
+              "text": "Path ABCD"
             }
           ],
           "correctOption": "D"
@@ -39930,7 +39930,7 @@
             },
             {
               "key": "D",
-              "text": "35 days GO_TO_ANSWER"
+              "text": "35 days"
             }
           ],
           "correctOption": "B"
@@ -39956,7 +39956,7 @@
             },
             {
               "key": "D",
-              "text": "6 GO_TO_ANSWER"
+              "text": "6"
             }
           ],
           "correctOption": "B"
@@ -39982,7 +39982,7 @@
             },
             {
               "key": "D",
-              "text": "30 GO_TO_ANSWER"
+              "text": "30"
             }
           ],
           "correctOption": "D"
@@ -40008,7 +40008,7 @@
             },
             {
               "key": "D",
-              "text": "Plan cost management GO_TO_ANSWER"
+              "text": "Plan cost management"
             }
           ],
           "correctOption": "D"
@@ -40034,7 +40034,7 @@
             },
             {
               "key": "D",
-              "text": "99.69873 GO_TO_ANSWER"
+              "text": "99.69873"
             }
           ],
           "correctOption": "B"
@@ -40060,7 +40060,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -40086,7 +40086,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -40112,7 +40112,7 @@
             },
             {
               "key": "D",
-              "text": "Manage risk GO_TO_ANSWER"
+              "text": "Manage risk"
             }
           ],
           "correctOption": "C"
@@ -40138,7 +40138,7 @@
             },
             {
               "key": "D",
-              "text": "Defect repair GO_TO_ANSWER"
+              "text": "Defect repair"
             }
           ],
           "correctOption": "A"
@@ -40164,7 +40164,7 @@
             },
             {
               "key": "D",
-              "text": "Define scope GO_TO_ANSWER"
+              "text": "Define scope"
             }
           ],
           "correctOption": "B"
@@ -40190,7 +40190,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -40216,7 +40216,7 @@
             },
             {
               "key": "D",
-              "text": "Prototyping GO_TO_ANSWER"
+              "text": "Prototyping"
             }
           ],
           "correctOption": "B"
@@ -40242,7 +40242,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -40268,7 +40268,7 @@
             },
             {
               "key": "D",
-              "text": "Decoding GO_TO_ANSWER"
+              "text": "Decoding"
             }
           ],
           "correctOption": "D"
@@ -40294,7 +40294,7 @@
             },
             {
               "key": "D",
-              "text": "Control scope GO_TO_ANSWER"
+              "text": "Control scope"
             }
           ],
           "correctOption": "B"
@@ -40320,7 +40320,7 @@
             },
             {
               "key": "D",
-              "text": "Control quality GO_TO_ANSWER"
+              "text": "Control quality"
             }
           ],
           "correctOption": "B"
@@ -40346,7 +40346,7 @@
             },
             {
               "key": "D",
-              "text": "1.5 GO_TO_ANSWER"
+              "text": "1.5"
             }
           ],
           "correctOption": "B"
@@ -40372,7 +40372,7 @@
             },
             {
               "key": "D",
-              "text": "375,000 USD GO_TO_ANSWER"
+              "text": "375,000 USD"
             }
           ],
           "correctOption": "A"
@@ -40398,7 +40398,7 @@
             },
             {
               "key": "D",
-              "text": "375,000 USD GO_TO_ANSWER"
+              "text": "375,000 USD"
             }
           ],
           "correctOption": "D"
@@ -40424,7 +40424,7 @@
             },
             {
               "key": "D",
-              "text": "You are doing the quality control process. GO_TO_ANSWER"
+              "text": "You are doing the quality control process."
             }
           ],
           "correctOption": "B"
@@ -40450,7 +40450,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -40476,7 +40476,7 @@
             },
             {
               "key": "D",
-              "text": "Mitigate GO_TO_ANSWER"
+              "text": "Mitigate"
             }
           ],
           "correctOption": "A"
@@ -40502,7 +40502,7 @@
             },
             {
               "key": "D",
-              "text": "Ball park estimate GO_TO_ANSWER"
+              "text": "Ball park estimate"
             }
           ],
           "correctOption": "B"
@@ -40528,7 +40528,7 @@
             },
             {
               "key": "C",
-              "text": "Reward power GO_TO_ANSWER"
+              "text": "Reward power"
             }
           ],
           "correctOption": "A"
@@ -40554,7 +40554,7 @@
             },
             {
               "key": "D",
-              "text": "Plan risk responses GO_TO_ANSWER"
+              "text": "Plan risk responses"
             }
           ],
           "correctOption": "C"
@@ -40580,7 +40580,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -40606,7 +40606,7 @@
             },
             {
               "key": "D",
-              "text": "62,500 USD GO_TO_ANSWER"
+              "text": "62,500 USD"
             }
           ],
           "correctOption": "D"
@@ -40632,7 +40632,7 @@
             },
             {
               "key": "D",
-              "text": "Benchmarking GO_TO_ANSWER"
+              "text": "Benchmarking"
             }
           ],
           "correctOption": "D"
@@ -40658,7 +40658,7 @@
             },
             {
               "key": "D",
-              "text": "-220 USD GO_TO_ANSWER"
+              "text": "-220 USD"
             }
           ],
           "correctOption": "B"
@@ -40684,7 +40684,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -40710,7 +40710,7 @@
             },
             {
               "key": "D",
-              "text": "Control change management GO_TO_ANSWER"
+              "text": "Control change management"
             }
           ],
           "correctOption": "B"
@@ -40736,7 +40736,7 @@
             },
             {
               "key": "D",
-              "text": "Stakeholder register GO_TO_ANSWER"
+              "text": "Stakeholder register"
             }
           ],
           "correctOption": "B"
@@ -40762,7 +40762,7 @@
             },
             {
               "key": "D",
-              "text": "Benefit realization GO_TO_ANSWER"
+              "text": "Benefit realization"
             }
           ],
           "correctOption": "A"
@@ -40788,7 +40788,7 @@
             },
             {
               "key": "D",
-              "text": "Progress report GO_TO_ANSWER"
+              "text": "Progress report"
             }
           ],
           "correctOption": "A"
@@ -40814,7 +40814,7 @@
             },
             {
               "key": "D",
-              "text": "Bring one team member from each team to a war room GO_TO_ANSWER"
+              "text": "Bring one team member from each team to a war room"
             }
           ],
           "correctOption": "C"
@@ -40840,7 +40840,7 @@
             },
             {
               "key": "D",
-              "text": "Checklist analysis GO_TO_ANSWER"
+              "text": "Checklist analysis"
             }
           ],
           "correctOption": "A"
@@ -40866,7 +40866,7 @@
             },
             {
               "key": "D",
-              "text": "You will correct the old data and apply it again to get the right figure GO_TO_ANSWER"
+              "text": "You will correct the old data and apply it again to get the right figure"
             }
           ],
           "correctOption": "C"
@@ -40892,7 +40892,7 @@
             },
             {
               "key": "D",
-              "text": "Herzberg motivation theory GO_TO_ANSWER"
+              "text": "Herzberg motivation theory"
             }
           ],
           "correctOption": "C"
@@ -40918,7 +40918,7 @@
             },
             {
               "key": "D",
-              "text": "An unknown risk GO_TO_ANSWER"
+              "text": "An unknown risk"
             }
           ],
           "correctOption": "A"
@@ -40944,7 +40944,7 @@
             },
             {
               "key": "D",
-              "text": "Tornado diagram GO_TO_ANSWER"
+              "text": "Tornado diagram"
             }
           ],
           "correctOption": "A"
@@ -40970,7 +40970,7 @@
             },
             {
               "key": "D",
-              "text": "Change request GO_TO_ANSWER"
+              "text": "Change request"
             }
           ],
           "correctOption": "C"
@@ -40996,7 +40996,7 @@
             },
             {
               "key": "D",
-              "text": "Formal communication GO_TO_ANSWER"
+              "text": "Formal communication"
             }
           ],
           "correctOption": "B"
@@ -41022,7 +41022,7 @@
             },
             {
               "key": "D",
-              "text": "Change log GO_TO_ANSWER"
+              "text": "Change log"
             }
           ],
           "correctOption": "D"
@@ -41048,7 +41048,7 @@
             },
             {
               "key": "D",
-              "text": "Scope creep GO_TO_ANSWER"
+              "text": "Scope creep"
             }
           ],
           "correctOption": "A"
@@ -41074,7 +41074,7 @@
             },
             {
               "key": "D",
-              "text": "Event 1 is a very low risk event GO_TO_ANSWER Practice Questions: Set-II"
+              "text": "Event 1 is a very low risk event Practice Questions: Set-II"
             }
           ],
           "correctOption": "C"
@@ -41100,7 +41100,7 @@
             },
             {
               "key": "D",
-              "text": "You ask them to refer to any standard such as the PMBOK Guide. GO_TO_ANSWER"
+              "text": "You ask them to refer to any standard such as the PMBOK Guide."
             }
           ],
           "correctOption": "D"
@@ -41126,7 +41126,7 @@
             },
             {
               "key": "D",
-              "text": "Milestone GO_TO_ANSWER"
+              "text": "Milestone"
             }
           ],
           "correctOption": "B"
@@ -41152,7 +41152,7 @@
             },
             {
               "key": "D",
-              "text": "Here it is assumed that resources are available whenever they are needed GO_TO_ANSWER"
+              "text": "Here it is assumed that resources are available whenever they are needed"
             }
           ],
           "correctOption": "C"
@@ -41178,7 +41178,7 @@
             },
             {
               "key": "D",
-              "text": "ADM GO_TO_ANSWER"
+              "text": "ADM"
             }
           ],
           "correctOption": "D"
@@ -41204,7 +41204,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -41230,7 +41230,7 @@
             },
             {
               "key": "D",
-              "text": "Check the solution GO_TO_ANSWER"
+              "text": "Check the solution"
             }
           ],
           "correctOption": "C"
@@ -41256,7 +41256,7 @@
             },
             {
               "key": "D",
-              "text": "Inform management GO_TO_ANSWER"
+              "text": "Inform management"
             }
           ],
           "correctOption": "C"
@@ -41282,7 +41282,7 @@
             },
             {
               "key": "D",
-              "text": "Root cause analysis GO_TO_ANSWER"
+              "text": "Root cause analysis"
             }
           ],
           "correctOption": "D"
@@ -41308,7 +41308,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -41334,7 +41334,7 @@
             },
             {
               "key": "D",
-              "text": "Brainstorming GO_TO_ANSWER"
+              "text": "Brainstorming"
             }
           ],
           "correctOption": "B"
@@ -41360,7 +41360,7 @@
             },
             {
               "key": "D",
-              "text": "Honesty GO_TO_ANSWER"
+              "text": "Honesty"
             }
           ],
           "correctOption": "C"
@@ -41386,7 +41386,7 @@
             },
             {
               "key": "D",
-              "text": "Usually, a change control board is responsible for approving or rejecting the change request GO_TO_ANSWER"
+              "text": "Usually, a change control board is responsible for approving or rejecting the change request"
             }
           ],
           "correctOption": "D"
@@ -41412,7 +41412,7 @@
             },
             {
               "key": "D",
-              "text": "Progressive elaboration GO_TO_ANSWER"
+              "text": "Progressive elaboration"
             }
           ],
           "correctOption": "A"
@@ -41438,7 +41438,7 @@
             },
             {
               "key": "D",
-              "text": "Feeding buffer GO_TO_ANSWER"
+              "text": "Feeding buffer"
             }
           ],
           "correctOption": "B"
@@ -41464,7 +41464,7 @@
             },
             {
               "key": "D",
-              "text": "Parametric GO_TO_ANSWER"
+              "text": "Parametric"
             }
           ],
           "correctOption": "D"
@@ -41490,7 +41490,7 @@
             },
             {
               "key": "D",
-              "text": "Find the cause for this reading GO_TO_ANSWER"
+              "text": "Find the cause for this reading"
             }
           ],
           "correctOption": "D"
@@ -41516,7 +41516,7 @@
             },
             {
               "key": "D",
-              "text": "Motivational processes GO_TO_ANSWER"
+              "text": "Motivational processes"
             }
           ],
           "correctOption": "D"
@@ -41542,7 +41542,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -41568,7 +41568,7 @@
             },
             {
               "key": "D",
-              "text": "Create WBS GO_TO_ANSWER"
+              "text": "Create WBS"
             }
           ],
           "correctOption": "C"
@@ -41594,7 +41594,7 @@
             },
             {
               "key": "D",
-              "text": "Time & material GO_TO_ANSWER"
+              "text": "Time & material"
             }
           ],
           "correctOption": "A"
@@ -41620,7 +41620,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -41646,7 +41646,7 @@
             },
             {
               "key": "D",
-              "text": "Responsibility GO_TO_ANSWER"
+              "text": "Responsibility"
             }
           ],
           "correctOption": "A"
@@ -41672,7 +41672,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -41698,7 +41698,7 @@
             },
             {
               "key": "D",
-              "text": "Just in Time GO_TO_ANSWER"
+              "text": "Just in Time"
             }
           ],
           "correctOption": "A"
@@ -41724,7 +41724,7 @@
             },
             {
               "key": "D",
-              "text": "Hammock activities GO_TO_ANSWER"
+              "text": "Hammock activities"
             }
           ],
           "correctOption": "C"
@@ -41750,7 +41750,7 @@
             },
             {
               "key": "D",
-              "text": "Schedule baseline GO_TO_ANSWER"
+              "text": "Schedule baseline"
             }
           ],
           "correctOption": "C"
@@ -41776,7 +41776,7 @@
             },
             {
               "key": "D",
-              "text": "JIT GO_TO_ANSWER"
+              "text": "JIT"
             }
           ],
           "correctOption": "D"
@@ -41802,7 +41802,7 @@
             },
             {
               "key": "D",
-              "text": "Compromise GO_TO_ANSWER"
+              "text": "Compromise"
             }
           ],
           "correctOption": "D"
@@ -41828,7 +41828,7 @@
             },
             {
               "key": "D",
-              "text": "Cultural awareness GO_TO_ANSWER"
+              "text": "Cultural awareness"
             }
           ],
           "correctOption": "C"
@@ -41854,7 +41854,7 @@
             },
             {
               "key": "D",
-              "text": "It is a technique of the determine budget process GO_TO_ANSWER"
+              "text": "It is a technique of the determine budget process"
             }
           ],
           "correctOption": "B"
@@ -41880,7 +41880,7 @@
             },
             {
               "key": "D",
-              "text": "Cost plus fixed fee GO_TO_ANSWER"
+              "text": "Cost plus fixed fee"
             }
           ],
           "correctOption": "A"
@@ -41906,7 +41906,7 @@
             },
             {
               "key": "D",
-              "text": "Inform management about it GO_TO_ANSWER"
+              "text": "Inform management about it"
             }
           ],
           "correctOption": "B"
@@ -41932,7 +41932,7 @@
             },
             {
               "key": "D",
-              "text": "Disclose it to the tender committee GO_TO_ANSWER"
+              "text": "Disclose it to the tender committee"
             }
           ],
           "correctOption": "D"
@@ -41958,7 +41958,7 @@
             },
             {
               "key": "D",
-              "text": "Exploit GO_TO_ANSWER"
+              "text": "Exploit"
             }
           ],
           "correctOption": "C"
@@ -41984,7 +41984,7 @@
             },
             {
               "key": "D",
-              "text": "Plurality GO_TO_ANSWER"
+              "text": "Plurality"
             }
           ],
           "correctOption": "D"
@@ -42010,7 +42010,7 @@
             },
             {
               "key": "D",
-              "text": "All of the above GO_TO_ANSWER"
+              "text": "All of the above"
             }
           ],
           "correctOption": "A"
@@ -42036,7 +42036,7 @@
             },
             {
               "key": "D",
-              "text": "BAC GO_TO_ANSWER"
+              "text": "BAC"
             }
           ],
           "correctOption": "C"
@@ -42062,7 +42062,7 @@
             },
             {
               "key": "D",
-              "text": "Your product is of high quality GO_TO_ANSWER"
+              "text": "Your product is of high quality"
             }
           ],
           "correctOption": "B"
@@ -42088,7 +42088,7 @@
             },
             {
               "key": "D",
-              "text": "Smooth GO_TO_ANSWER"
+              "text": "Smooth"
             }
           ],
           "correctOption": "A"
@@ -42114,7 +42114,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -42140,7 +42140,7 @@
             },
             {
               "key": "D",
-              "text": "Residual risk GO_TO_ANSWER"
+              "text": "Residual risk"
             }
           ],
           "correctOption": "B"
@@ -42166,7 +42166,7 @@
             },
             {
               "key": "D",
-              "text": "Control procurement GO_TO_ANSWER"
+              "text": "Control procurement"
             }
           ],
           "correctOption": "D"
@@ -42192,7 +42192,7 @@
             },
             {
               "key": "D",
-              "text": "Manage only high power and high-interest group stakeholders GO_TO_ANSWER"
+              "text": "Manage only high power and high-interest group stakeholders"
             }
           ],
           "correctOption": "C"
@@ -42218,7 +42218,7 @@
             },
             {
               "key": "D",
-              "text": "You will accept your error and take corrective action GO_TO_ANSWER"
+              "text": "You will accept your error and take corrective action"
             }
           ],
           "correctOption": "D"
@@ -42244,7 +42244,7 @@
             },
             {
               "key": "D",
-              "text": "Performance report GO_TO_ANSWER"
+              "text": "Performance report"
             }
           ],
           "correctOption": "C"
@@ -42270,7 +42270,7 @@
             },
             {
               "key": "D",
-              "text": "Try to influence the client GO_TO_ANSWER"
+              "text": "Try to influence the client"
             }
           ],
           "correctOption": "C"
@@ -42296,7 +42296,7 @@
             },
             {
               "key": "D",
-              "text": "Create WBS GO_TO_ANSWER"
+              "text": "Create WBS"
             }
           ],
           "correctOption": "B"
@@ -42322,7 +42322,7 @@
             },
             {
               "key": "D",
-              "text": "Activity contingency reserve GO_TO_ANSWER"
+              "text": "Activity contingency reserve"
             }
           ],
           "correctOption": "C"
@@ -42348,7 +42348,7 @@
             },
             {
               "key": "D",
-              "text": "You will use a Pareto analysis GO_TO_ANSWER"
+              "text": "You will use a Pareto analysis"
             }
           ],
           "correctOption": "B"
@@ -42374,7 +42374,7 @@
             },
             {
               "key": "D",
-              "text": "Management by objective GO_TO_ANSWER"
+              "text": "Management by objective"
             }
           ],
           "correctOption": "D"
@@ -42400,7 +42400,7 @@
             },
             {
               "key": "D",
-              "text": "Decode message GO_TO_ANSWER"
+              "text": "Decode message"
             }
           ],
           "correctOption": "C"
@@ -42426,7 +42426,7 @@
             },
             {
               "key": "D",
-              "text": "Issue log GO_TO_ANSWER"
+              "text": "Issue log"
             }
           ],
           "correctOption": "B"
@@ -42452,7 +42452,7 @@
             },
             {
               "key": "D",
-              "text": "Fixed price incentive fee GO_TO_ANSWER"
+              "text": "Fixed price incentive fee"
             }
           ],
           "correctOption": "A"
@@ -42478,7 +42478,7 @@
             },
             {
               "key": "D",
-              "text": "Before the collect requirement process GO_TO_ANSWER"
+              "text": "Before the collect requirement process"
             }
           ],
           "correctOption": "A"
@@ -42504,7 +42504,7 @@
             },
             {
               "key": "D",
-              "text": "You will accept the gift and politely return it later, citing ethical social responsibility GO_TO_ANSWER"
+              "text": "You will accept the gift and politely return it later, citing ethical social responsibility"
             }
           ],
           "correctOption": "B"
@@ -42530,7 +42530,7 @@
             },
             {
               "key": "D",
-              "text": "Subcontract parts of the project GO_TO_ANSWER"
+              "text": "Subcontract parts of the project"
             }
           ],
           "correctOption": "B"
@@ -42556,7 +42556,7 @@
             },
             {
               "key": "D",
-              "text": "Critical risks GO_TO_ANSWER"
+              "text": "Critical risks"
             }
           ],
           "correctOption": "D"
@@ -42582,7 +42582,7 @@
             },
             {
               "key": "D",
-              "text": "External dependency GO_TO_ANSWER"
+              "text": "External dependency"
             }
           ],
           "correctOption": "B"
@@ -42608,7 +42608,7 @@
             },
             {
               "key": "D",
-              "text": "46.7% GO_TO_ANSWER"
+              "text": "46.7%"
             }
           ],
           "correctOption": "B"
@@ -42634,7 +42634,7 @@
             },
             {
               "key": "D",
-              "text": "Control chart GO_TO_ANSWER"
+              "text": "Control chart"
             }
           ],
           "correctOption": "D"
@@ -42660,7 +42660,7 @@
             },
             {
               "key": "D",
-              "text": "Referent power GO_TO_ANSWER"
+              "text": "Referent power"
             }
           ],
           "correctOption": "C"
@@ -42686,7 +42686,7 @@
             },
             {
               "key": "D",
-              "text": "Pull communication GO_TO_ANSWER"
+              "text": "Pull communication"
             }
           ],
           "correctOption": "A"
@@ -42712,7 +42712,7 @@
             },
             {
               "key": "D",
-              "text": "Perform qualitative risk analysis GO_TO_ANSWER"
+              "text": "Perform qualitative risk analysis"
             }
           ],
           "correctOption": "A"
@@ -42738,7 +42738,7 @@
             },
             {
               "key": "D",
-              "text": "Requirement document GO_TO_ANSWER"
+              "text": "Requirement document"
             }
           ],
           "correctOption": "A"
@@ -42764,7 +42764,7 @@
             },
             {
               "key": "D",
-              "text": "Procurement document GO_TO_ANSWER"
+              "text": "Procurement document"
             }
           ],
           "correctOption": "D"
@@ -42790,7 +42790,7 @@
             },
             {
               "key": "D",
-              "text": "You will report to the police GO_TO_ANSWER"
+              "text": "You will report to the police"
             }
           ],
           "correctOption": "C"
@@ -42816,7 +42816,7 @@
             },
             {
               "key": "D",
-              "text": "Avoid GO_TO_ANSWER"
+              "text": "Avoid"
             }
           ],
           "correctOption": "B"
@@ -42842,7 +42842,7 @@
             },
             {
               "key": "D",
-              "text": "Name of the competitor GO_TO_ANSWER"
+              "text": "Name of the competitor"
             }
           ],
           "correctOption": "D"
@@ -42868,7 +42868,7 @@
             },
             {
               "key": "D",
-              "text": "All of the above GO_TO_ANSWER"
+              "text": "All of the above"
             }
           ],
           "correctOption": "A"
@@ -42894,7 +42894,7 @@
             },
             {
               "key": "D",
-              "text": "Indirect cost GO_TO_ANSWER"
+              "text": "Indirect cost"
             }
           ],
           "correctOption": "B"
@@ -42920,7 +42920,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -42946,7 +42946,7 @@
             },
             {
               "key": "D",
-              "text": "Working conditions GO_TO_ANSWER"
+              "text": "Working conditions"
             }
           ],
           "correctOption": "B"
@@ -42972,7 +42972,7 @@
             },
             {
               "key": "D",
-              "text": "Work performance information GO_TO_ANSWER"
+              "text": "Work performance information"
             }
           ],
           "correctOption": "A"
@@ -42998,7 +42998,7 @@
             },
             {
               "key": "D",
-              "text": "Exploit GO_TO_ANSWER"
+              "text": "Exploit"
             }
           ],
           "correctOption": "B"
@@ -43024,7 +43024,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -43050,7 +43050,7 @@
             },
             {
               "key": "D",
-              "text": "Impact / Power grid GO_TO_ANSWER"
+              "text": "Impact / Power grid"
             }
           ],
           "correctOption": "D"
@@ -43076,7 +43076,7 @@
             },
             {
               "key": "D",
-              "text": "You will ask for a job instead of money GO_TO_ANSWER"
+              "text": "You will ask for a job instead of money"
             }
           ],
           "correctOption": "B"
@@ -43102,7 +43102,7 @@
             },
             {
               "key": "D",
-              "text": "Members have a clear career growth path GO_TO_ANSWER"
+              "text": "Members have a clear career growth path"
             }
           ],
           "correctOption": "D"
@@ -43128,7 +43128,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -43154,7 +43154,7 @@
             },
             {
               "key": "D",
-              "text": "Critical chain GO_TO_ANSWER"
+              "text": "Critical chain"
             }
           ],
           "correctOption": "A"
@@ -43180,7 +43180,7 @@
             },
             {
               "key": "D",
-              "text": "EAC GO_TO_ANSWER"
+              "text": "EAC"
             }
           ],
           "correctOption": "B"
@@ -43206,7 +43206,7 @@
             },
             {
               "key": "D",
-              "text": "Axial correlation GO_TO_ANSWER"
+              "text": "Axial correlation"
             }
           ],
           "correctOption": "A"
@@ -43232,7 +43232,7 @@
             },
             {
               "key": "D",
-              "text": "Career growth GO_TO_ANSWER"
+              "text": "Career growth"
             }
           ],
           "correctOption": "D"
@@ -43258,7 +43258,7 @@
             },
             {
               "key": "D",
-              "text": "You did not analyze it properly GO_TO_ANSWER"
+              "text": "You did not analyze it properly"
             }
           ],
           "correctOption": "C"
@@ -43284,7 +43284,7 @@
             },
             {
               "key": "D",
-              "text": "Exploit GO_TO_ANSWER"
+              "text": "Exploit"
             }
           ],
           "correctOption": "C"
@@ -43310,7 +43310,7 @@
             },
             {
               "key": "D",
-              "text": "Time and material GO_TO_ANSWER"
+              "text": "Time and material"
             }
           ],
           "correctOption": "B"
@@ -43336,7 +43336,7 @@
             },
             {
               "key": "D",
-              "text": "This process is started only when the project charter is signed GO_TO_ANSWER"
+              "text": "This process is started only when the project charter is signed"
             }
           ],
           "correctOption": "D"
@@ -43362,7 +43362,7 @@
             },
             {
               "key": "D",
-              "text": "You will discuss it with your superior GO_TO_ANSWER"
+              "text": "You will discuss it with your superior"
             }
           ],
           "correctOption": "A"
@@ -43388,7 +43388,7 @@
             },
             {
               "key": "D",
-              "text": "During the executing, and monitoring & controlling phase GO_TO_ANSWER"
+              "text": "During the executing, and monitoring & controlling phase"
             }
           ],
           "correctOption": "C"
@@ -43414,7 +43414,7 @@
             },
             {
               "key": "D",
-              "text": "You will involve all of your project stakeholders to collect the lessons learned GO_TO_ANSWER"
+              "text": "You will involve all of your project stakeholders to collect the lessons learned"
             }
           ],
           "correctOption": "B"
@@ -43440,7 +43440,7 @@
             },
             {
               "key": "D",
-              "text": "Start to Start GO_TO_ANSWER"
+              "text": "Start to Start"
             }
           ],
           "correctOption": "B"
@@ -43466,7 +43466,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -43492,7 +43492,7 @@
             },
             {
               "key": "D",
-              "text": "You will adjust the control limits GO_TO_ANSWER"
+              "text": "You will adjust the control limits"
             }
           ],
           "correctOption": "B"
@@ -43518,7 +43518,7 @@
             },
             {
               "key": "D",
-              "text": "WBS GO_TO_ANSWER"
+              "text": "WBS"
             }
           ],
           "correctOption": "A"
@@ -43544,7 +43544,7 @@
             },
             {
               "key": "D",
-              "text": "Inform the management GO_TO_ANSWER"
+              "text": "Inform the management"
             }
           ],
           "correctOption": "C"
@@ -43570,7 +43570,7 @@
             },
             {
               "key": "D",
-              "text": "Plan communication management GO_TO_ANSWER"
+              "text": "Plan communication management"
             }
           ],
           "correctOption": "A"
@@ -43596,7 +43596,7 @@
             },
             {
               "key": "D",
-              "text": "Decision making GO_TO_ANSWER"
+              "text": "Decision making"
             }
           ],
           "correctOption": "B"
@@ -43622,7 +43622,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -43648,7 +43648,7 @@
             },
             {
               "key": "D",
-              "text": "Monte Carlo GO_TO_ANSWER"
+              "text": "Monte Carlo"
             }
           ],
           "correctOption": "D"
@@ -43674,7 +43674,7 @@
             },
             {
               "key": "D",
-              "text": "Damaged GO_TO_ANSWER"
+              "text": "Damaged"
             }
           ],
           "correctOption": "B"
@@ -43700,7 +43700,7 @@
             },
             {
               "key": "D",
-              "text": "Cost benefit analysis GO_TO_ANSWER"
+              "text": "Cost benefit analysis"
             }
           ],
           "correctOption": "D"
@@ -43726,7 +43726,7 @@
             },
             {
               "key": "D",
-              "text": "Implement ground rules GO_TO_ANSWER"
+              "text": "Implement ground rules"
             }
           ],
           "correctOption": "D"
@@ -43752,7 +43752,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -43778,7 +43778,7 @@
             },
             {
               "key": "D",
-              "text": "Time and material GO_TO_ANSWER"
+              "text": "Time and material"
             }
           ],
           "correctOption": "D"
@@ -43804,7 +43804,7 @@
             },
             {
               "key": "D",
-              "text": "Quality assurance personnel GO_TO_ANSWER"
+              "text": "Quality assurance personnel"
             }
           ],
           "correctOption": "B"
@@ -43830,7 +43830,7 @@
             },
             {
               "key": "D",
-              "text": "Resource breakdown structure GO_TO_ANSWER"
+              "text": "Resource breakdown structure"
             }
           ],
           "correctOption": "D"
@@ -43856,7 +43856,7 @@
             },
             {
               "key": "D",
-              "text": "OBS GO_TO_ANSWER"
+              "text": "OBS"
             }
           ],
           "correctOption": "A"
@@ -43882,7 +43882,7 @@
             },
             {
               "key": "D",
-              "text": "3.5 GO_TO_ANSWER"
+              "text": "3.5"
             }
           ],
           "correctOption": "A"
@@ -43908,7 +43908,7 @@
             },
             {
               "key": "D",
-              "text": "0.5 GO_TO_ANSWER"
+              "text": "0.5"
             }
           ],
           "correctOption": "A"
@@ -43934,7 +43934,7 @@
             },
             {
               "key": "D",
-              "text": "Sensitivity diagram GO_TO_ANSWER"
+              "text": "Sensitivity diagram"
             }
           ],
           "correctOption": "C"
@@ -43960,7 +43960,7 @@
             },
             {
               "key": "D",
-              "text": "Crashing GO_TO_ANSWER"
+              "text": "Crashing"
             }
           ],
           "correctOption": "A"
@@ -43986,7 +43986,7 @@
             },
             {
               "key": "D",
-              "text": "Influential power GO_TO_ANSWER"
+              "text": "Influential power"
             }
           ],
           "correctOption": "B"
@@ -44012,7 +44012,7 @@
             },
             {
               "key": "D",
-              "text": "CPIF GO_TO_ANSWER"
+              "text": "CPIF"
             }
           ],
           "correctOption": "B"
@@ -44038,7 +44038,7 @@
             },
             {
               "key": "D",
-              "text": "Payback period GO_TO_ANSWER"
+              "text": "Payback period"
             }
           ],
           "correctOption": "C"
@@ -44064,7 +44064,7 @@
             },
             {
               "key": "D",
-              "text": "Project management information system GO_TO_ANSWER"
+              "text": "Project management information system"
             }
           ],
           "correctOption": "C"
@@ -44090,7 +44090,7 @@
             },
             {
               "key": "D",
-              "text": "Project plan GO_TO_ANSWER"
+              "text": "Project plan"
             }
           ],
           "correctOption": "D"
@@ -44116,7 +44116,7 @@
             },
             {
               "key": "D",
-              "text": "Resource leveling GO_TO_ANSWER"
+              "text": "Resource leveling"
             }
           ],
           "correctOption": "C"
@@ -44142,7 +44142,7 @@
             },
             {
               "key": "D",
-              "text": "AC + (BAC – EV) / (CPI * SPI) GO_TO_ANSWER"
+              "text": "AC + (BAC – EV) / (CPI * SPI)"
             }
           ],
           "correctOption": "B"
@@ -44168,7 +44168,7 @@
             },
             {
               "key": "D",
-              "text": "ISO 1800 GO_TO_ANSWER"
+              "text": "ISO 1800"
             }
           ],
           "correctOption": "A"
@@ -44194,7 +44194,7 @@
             },
             {
               "key": "D",
-              "text": "Hygiene theory GO_TO_ANSWER"
+              "text": "Hygiene theory"
             }
           ],
           "correctOption": "B"
@@ -44220,7 +44220,7 @@
             },
             {
               "key": "D",
-              "text": "Project budget GO_TO_ANSWER"
+              "text": "Project budget"
             }
           ],
           "correctOption": "C"
@@ -44246,7 +44246,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "D"
@@ -44272,7 +44272,7 @@
             },
             {
               "key": "D",
-              "text": "Weak matrix organization GO_TO_ANSWER"
+              "text": "Weak matrix organization"
             }
           ],
           "correctOption": "A"
@@ -44298,7 +44298,7 @@
             },
             {
               "key": "D",
-              "text": "Project archive GO_TO_ANSWER"
+              "text": "Project archive"
             }
           ],
           "correctOption": "A"
@@ -44324,7 +44324,7 @@
             },
             {
               "key": "D",
-              "text": "WBS GO_TO_ANSWER"
+              "text": "WBS"
             }
           ],
           "correctOption": "A"
@@ -44350,7 +44350,7 @@
             },
             {
               "key": "D",
-              "text": "Crashing GO_TO_ANSWER"
+              "text": "Crashing"
             }
           ],
           "correctOption": "C"
@@ -44376,7 +44376,7 @@
             },
             {
               "key": "D",
-              "text": "275,000 USD GO_TO_ANSWER"
+              "text": "275,000 USD"
             }
           ],
           "correctOption": "D"
@@ -44402,7 +44402,7 @@
             },
             {
               "key": "D",
-              "text": "More after sale support GO_TO_ANSWER"
+              "text": "More after sale support"
             }
           ],
           "correctOption": "D"
@@ -44428,7 +44428,7 @@
             },
             {
               "key": "D",
-              "text": "It shows resources assigned to each work package GO_TO_ANSWER"
+              "text": "It shows resources assigned to each work package"
             }
           ],
           "correctOption": "B"
@@ -44454,7 +44454,7 @@
             },
             {
               "key": "D",
-              "text": "Accept GO_TO_ANSWER"
+              "text": "Accept"
             }
           ],
           "correctOption": "C"
@@ -44480,7 +44480,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -44506,7 +44506,7 @@
             },
             {
               "key": "D",
-              "text": "The project with 25,000 USD NPV GO_TO_ANSWER"
+              "text": "The project with 25,000 USD NPV"
             }
           ],
           "correctOption": "D"
@@ -44532,7 +44532,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -44558,7 +44558,7 @@
             },
             {
               "key": "D",
-              "text": "Procurements documents GO_TO_ANSWER"
+              "text": "Procurements documents"
             }
           ],
           "correctOption": "D"
@@ -44584,7 +44584,7 @@
             },
             {
               "key": "D",
-              "text": "WBS activity GO_TO_ANSWER"
+              "text": "WBS activity"
             }
           ],
           "correctOption": "C"
@@ -44610,7 +44610,7 @@
             },
             {
               "key": "D",
-              "text": "The second cell phone is a high grade, high-quality phone GO_TO_ANSWER"
+              "text": "The second cell phone is a high grade, high-quality phone"
             }
           ],
           "correctOption": "A"
@@ -44636,7 +44636,7 @@
             },
             {
               "key": "D",
-              "text": "Proper communication GO_TO_ANSWER"
+              "text": "Proper communication"
             }
           ],
           "correctOption": "C"
@@ -44662,7 +44662,7 @@
             },
             {
               "key": "D",
-              "text": "Decision tree method GO_TO_ANSWER"
+              "text": "Decision tree method"
             }
           ],
           "correctOption": "A"
@@ -44688,7 +44688,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -44714,7 +44714,7 @@
             },
             {
               "key": "D",
-              "text": "Project coordinator GO_TO_ANSWER"
+              "text": "Project coordinator"
             }
           ],
           "correctOption": "B"
@@ -44740,7 +44740,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -44766,7 +44766,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "A"
@@ -44792,7 +44792,7 @@
             },
             {
               "key": "D",
-              "text": "Not enough information GO_TO_ANSWER"
+              "text": "Not enough information"
             }
           ],
           "correctOption": "B"
@@ -44818,7 +44818,7 @@
             },
             {
               "key": "D",
-              "text": "117,647 USD GO_TO_ANSWER"
+              "text": "117,647 USD"
             }
           ],
           "correctOption": "D"
@@ -44844,7 +44844,7 @@
             },
             {
               "key": "D",
-              "text": "4 GO_TO_ANSWER"
+              "text": "4"
             }
           ],
           "correctOption": "C"
@@ -44870,7 +44870,7 @@
             },
             {
               "key": "D",
-              "text": "Formal power GO_TO_ANSWER"
+              "text": "Formal power"
             }
           ],
           "correctOption": "A"
@@ -44896,7 +44896,7 @@
             },
             {
               "key": "D",
-              "text": "Exploit GO_TO_ANSWER"
+              "text": "Exploit"
             }
           ],
           "correctOption": "A"
@@ -44922,7 +44922,7 @@
             },
             {
               "key": "D",
-              "text": "Performance data GO_TO_ANSWER"
+              "text": "Performance data"
             }
           ],
           "correctOption": "A"
@@ -44948,7 +44948,7 @@
             },
             {
               "key": "D",
-              "text": "Discuss it with the management GO_TO_ANSWER"
+              "text": "Discuss it with the management"
             }
           ],
           "correctOption": "C"
@@ -44974,7 +44974,7 @@
             },
             {
               "key": "D",
-              "text": "Perform quantitative risk analysis GO_TO_ANSWER"
+              "text": "Perform quantitative risk analysis"
             }
           ],
           "correctOption": "C"
@@ -45000,7 +45000,7 @@
             },
             {
               "key": "D",
-              "text": "266,666 USD GO_TO_ANSWER"
+              "text": "266,666 USD"
             }
           ],
           "correctOption": "A"
@@ -45026,7 +45026,7 @@
             },
             {
               "key": "D",
-              "text": "Punish them for poor performance GO_TO_ANSWER"
+              "text": "Punish them for poor performance"
             }
           ],
           "correctOption": "C"
@@ -45052,7 +45052,7 @@
             },
             {
               "key": "D",
-              "text": "Opportunities GO_TO_ANSWER"
+              "text": "Opportunities"
             }
           ],
           "correctOption": "B"
@@ -45078,7 +45078,7 @@
             },
             {
               "key": "D",
-              "text": "Configuration management GO_TO_ANSWER"
+              "text": "Configuration management"
             }
           ],
           "correctOption": "D"
@@ -45104,7 +45104,7 @@
             },
             {
               "key": "D",
-              "text": "It identifies the person accountable for each activity GO_TO_ANSWER"
+              "text": "It identifies the person accountable for each activity"
             }
           ],
           "correctOption": "D"
@@ -45130,7 +45130,7 @@
             },
             {
               "key": "D",
-              "text": "Fixed cost GO_TO_ANSWER"
+              "text": "Fixed cost"
             }
           ],
           "correctOption": "B"
@@ -45156,7 +45156,7 @@
             },
             {
               "key": "D",
-              "text": "Inform the stakeholders GO_TO_ANSWER"
+              "text": "Inform the stakeholders"
             }
           ],
           "correctOption": "C"
@@ -45182,7 +45182,7 @@
             },
             {
               "key": "D",
-              "text": "Project charter GO_TO_ANSWER"
+              "text": "Project charter"
             }
           ],
           "correctOption": "C"
@@ -45208,7 +45208,7 @@
             },
             {
               "key": "D",
-              "text": "The project management team GO_TO_ANSWER"
+              "text": "The project management team"
             }
           ],
           "correctOption": "B"
@@ -45234,7 +45234,7 @@
             },
             {
               "key": "D",
-              "text": "Schedule variance GO_TO_ANSWER"
+              "text": "Schedule variance"
             }
           ],
           "correctOption": "B"
@@ -45260,7 +45260,7 @@
             },
             {
               "key": "D",
-              "text": "Both are the same but an audit is done by external experts and a review is done internally GO_TO_ANSWER"
+              "text": "Both are the same but an audit is done by external experts and a review is done internally"
             }
           ],
           "correctOption": "B"
@@ -45286,7 +45286,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "D"
@@ -45312,7 +45312,7 @@
             },
             {
               "key": "D",
-              "text": "Business need GO_TO_ANSWER"
+              "text": "Business need"
             }
           ],
           "correctOption": "A"
@@ -45338,7 +45338,7 @@
             },
             {
               "key": "D",
-              "text": "15,000 USD GO_TO_ANSWER"
+              "text": "15,000 USD"
             }
           ],
           "correctOption": "A"
@@ -45364,7 +45364,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -45390,7 +45390,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -45416,7 +45416,7 @@
             },
             {
               "key": "D",
-              "text": "Investigate why the WBS was not developed GO_TO_ANSWER"
+              "text": "Investigate why the WBS was not developed"
             }
           ],
           "correctOption": "B"
@@ -45442,7 +45442,7 @@
             },
             {
               "key": "D",
-              "text": "Project management plan GO_TO_ANSWER"
+              "text": "Project management plan"
             }
           ],
           "correctOption": "D"
@@ -45468,7 +45468,7 @@
             },
             {
               "key": "D",
-              "text": "The NPV is negative, you will not go for it GO_TO_ANSWER"
+              "text": "The NPV is negative, you will not go for it"
             }
           ],
           "correctOption": "D"
@@ -45494,7 +45494,7 @@
             },
             {
               "key": "D",
-              "text": "Latin Hypercube technique GO_TO_ANSWER"
+              "text": "Latin Hypercube technique"
             }
           ],
           "correctOption": "B"
@@ -45520,7 +45520,7 @@
             },
             {
               "key": "D",
-              "text": "Competency GO_TO_ANSWER"
+              "text": "Competency"
             }
           ],
           "correctOption": "C"
@@ -45546,7 +45546,7 @@
             },
             {
               "key": "D",
-              "text": "Plan a risk response for them GO_TO_ANSWER"
+              "text": "Plan a risk response for them"
             }
           ],
           "correctOption": "C"
@@ -45572,7 +45572,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -45598,7 +45598,7 @@
             },
             {
               "key": "D",
-              "text": "RAM GO_TO_ANSWER"
+              "text": "RAM"
             }
           ],
           "correctOption": "B"
@@ -45624,7 +45624,7 @@
             },
             {
               "key": "D",
-              "text": "Portfolio manager GO_TO_ANSWER"
+              "text": "Portfolio manager"
             }
           ],
           "correctOption": "C"
@@ -45650,7 +45650,7 @@
             },
             {
               "key": "D",
-              "text": "Verify scope GO_TO_ANSWER"
+              "text": "Verify scope"
             }
           ],
           "correctOption": "C"
@@ -45676,7 +45676,7 @@
             },
             {
               "key": "D",
-              "text": "Training program for team members GO_TO_ANSWER"
+              "text": "Training program for team members"
             }
           ],
           "correctOption": "D"
@@ -45702,7 +45702,7 @@
             },
             {
               "key": "D",
-              "text": "In the fifth month, the project is behind schedule GO_TO_ANSWER"
+              "text": "In the fifth month, the project is behind schedule"
             }
           ],
           "correctOption": "A"
@@ -45728,7 +45728,7 @@
             },
             {
               "key": "D",
-              "text": "Inspection of the last three samples GO_TO_ANSWER"
+              "text": "Inspection of the last three samples"
             }
           ],
           "correctOption": "B"
@@ -45754,7 +45754,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -45780,7 +45780,7 @@
             },
             {
               "key": "D",
-              "text": "25% GO_TO_ANSWER"
+              "text": "25%"
             }
           ],
           "correctOption": "A"
@@ -45806,7 +45806,7 @@
             },
             {
               "key": "D",
-              "text": "Enter the close project process GO_TO_ANSWER"
+              "text": "Enter the close project process"
             }
           ],
           "correctOption": "D"
@@ -45832,7 +45832,7 @@
             },
             {
               "key": "D",
-              "text": "Building trust GO_TO_ANSWER"
+              "text": "Building trust"
             }
           ],
           "correctOption": "C"
@@ -45858,7 +45858,7 @@
             },
             {
               "key": "D",
-              "text": "7 GO_TO_ANSWER"
+              "text": "7"
             }
           ],
           "correctOption": "A"
@@ -45884,7 +45884,7 @@
             },
             {
               "key": "D",
-              "text": "Record it in lessons learned GO_TO_ANSWER"
+              "text": "Record it in lessons learned"
             }
           ],
           "correctOption": "A"
@@ -45910,7 +45910,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "C"
@@ -45936,7 +45936,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -45962,7 +45962,7 @@
             },
             {
               "key": "D",
-              "text": "None of the above GO_TO_ANSWER"
+              "text": "None of the above"
             }
           ],
           "correctOption": "B"
@@ -45988,7 +45988,7 @@
             },
             {
               "key": "D",
-              "text": "Activity C GO_TO_ANSWER"
+              "text": "Activity C"
             }
           ],
           "correctOption": "C"
@@ -46014,7 +46014,7 @@
             },
             {
               "key": "D",
-              "text": "2 GO_TO_ANSWER"
+              "text": "2"
             }
           ],
           "correctOption": "A"
@@ -46040,7 +46040,7 @@
             },
             {
               "key": "D",
-              "text": "Not sufficient data GO_TO_ANSWER"
+              "text": "Not sufficient data"
             }
           ],
           "correctOption": "B"
@@ -46066,7 +46066,7 @@
             },
             {
               "key": "D",
-              "text": "TQM GO_TO_ANSWER"
+              "text": "TQM"
             }
           ],
           "correctOption": "D"
@@ -46092,7 +46092,7 @@
             },
             {
               "key": "D",
-              "text": "Exit point GO_TO_ANSWER"
+              "text": "Exit point"
             }
           ],
           "correctOption": "D"
@@ -46118,7 +46118,7 @@
             },
             {
               "key": "D",
-              "text": "Informal written GO_TO_ANSWER"
+              "text": "Informal written"
             }
           ],
           "correctOption": "B"
@@ -46144,7 +46144,7 @@
             },
             {
               "key": "D",
-              "text": "Mandatory factors GO_TO_ANSWER"
+              "text": "Mandatory factors"
             }
           ],
           "correctOption": "A"
@@ -46170,7 +46170,7 @@
             },
             {
               "key": "D",
-              "text": "Procurement audit GO_TO_ANSWER"
+              "text": "Procurement audit"
             }
           ],
           "correctOption": "B"
@@ -46196,7 +46196,7 @@
             },
             {
               "key": "D",
-              "text": "Stakeholder management plan GO_TO_ANSWER"
+              "text": "Stakeholder management plan"
             }
           ],
           "correctOption": "C"
@@ -46222,7 +46222,7 @@
             },
             {
               "key": "D",
-              "text": "You will go for the express route GO_TO_ANSWER"
+              "text": "You will go for the express route"
             }
           ],
           "correctOption": "D"
@@ -46248,7 +46248,7 @@
             },
             {
               "key": "D",
-              "text": "315,000 USD GO_TO_ANSWER Answers Sheet: Set-I"
+              "text": "315,000 USD Answers Sheet: Set-I"
             }
           ],
           "correctOption": "B"
