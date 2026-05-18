@@ -57018,35 +57018,43 @@
           "promptNumber": 85,
           "topic": "Drag & Drop",
           "source": "110+Drag+&+Drop+Questions_David+McLachlan+2026.pdf",
-          "type": "drag-drop",
+          "type": "drag-drop-group",
           "stem": "Predictive and Adaptive",
-          "leftLabel": "Description",
-          "rightLabel": "Tool",
+          "leftLabel": "Choices",
+          "rightLabel": "Groups",
           "prompts": [
             {
               "id": "p1",
-              "text": "Fixed Scope and Requirements"
+              "text": "Predictive"
             },
             {
               "id": "p2",
-              "text": "Sequential Phases"
-            },
-            {
-              "id": "p3",
-              "text": "Detailed Planning"
+              "text": "Agile"
             }
           ],
           "choices": [
             {
               "id": "c1",
-              "text": "Adaptive Planning"
+              "text": "Fixed Scope and Requirements"
             },
             {
               "id": "c2",
-              "text": "Incremental Delivery"
+              "text": "Sequential Phases"
             },
             {
               "id": "c3",
+              "text": "Detailed Planning"
+            },
+            {
+              "id": "c4",
+              "text": "Adaptive Planning"
+            },
+            {
+              "id": "c5",
+              "text": "Incremental Delivery"
+            },
+            {
+              "id": "c6",
               "text": "Cross-Functional Teams"
             }
           ],
@@ -57056,12 +57064,24 @@
               "choiceId": "c1"
             },
             {
-              "promptId": "p2",
+              "promptId": "p1",
               "choiceId": "c2"
             },
             {
-              "promptId": "p3",
+              "promptId": "p1",
               "choiceId": "c3"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c4"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c5"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c6"
             }
           ]
         },
@@ -57070,35 +57090,43 @@
           "promptNumber": 86,
           "topic": "Drag & Drop",
           "source": "110+Drag+&+Drop+Questions_David+McLachlan+2026.pdf",
-          "type": "drag-drop",
+          "type": "drag-drop-group",
           "stem": "Predictive and Adaptive",
-          "leftLabel": "Description",
-          "rightLabel": "Tool",
+          "leftLabel": "Choices",
+          "rightLabel": "Groups",
           "prompts": [
             {
               "id": "p1",
-              "text": "Work Breakdown Structure (WBS)"
+              "text": "Predictive"
             },
             {
               "id": "p2",
-              "text": "Change Management Plan"
-            },
-            {
-              "id": "p3",
-              "text": "Risk Management Plan"
+              "text": "Agile"
             }
           ],
           "choices": [
             {
               "id": "c1",
-              "text": "Product Backlog"
+              "text": "Work Breakdown Structure (WBS)"
             },
             {
               "id": "c2",
-              "text": "Sprint Backlog"
+              "text": "Change Management Plan"
             },
             {
               "id": "c3",
+              "text": "Risk Management Plan"
+            },
+            {
+              "id": "c4",
+              "text": "Product Backlog"
+            },
+            {
+              "id": "c5",
+              "text": "Sprint Backlog"
+            },
+            {
+              "id": "c6",
               "text": "Burndown Chart"
             }
           ],
@@ -57108,12 +57136,24 @@
               "choiceId": "c1"
             },
             {
-              "promptId": "p2",
+              "promptId": "p1",
               "choiceId": "c2"
             },
             {
-              "promptId": "p3",
+              "promptId": "p1",
               "choiceId": "c3"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c4"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c5"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c6"
             }
           ]
         },
@@ -57314,35 +57354,43 @@
           "promptNumber": 90,
           "topic": "Drag & Drop",
           "source": "110+Drag+&+Drop+Questions_David+McLachlan+2026.pdf",
-          "type": "drag-drop",
+          "type": "drag-drop-group",
           "stem": "Predictive versus Adaptive",
-          "leftLabel": "Description",
-          "rightLabel": "Tool",
+          "leftLabel": "Choices",
+          "rightLabel": "Groups",
           "prompts": [
             {
               "id": "p1",
-              "text": "Scope is Fixed"
+              "text": "Predictive"
             },
             {
               "id": "p2",
-              "text": "Scope Management Plan"
-            },
-            {
-              "id": "p3",
-              "text": "Deliverables and Work Packages"
+              "text": "Agile"
             }
           ],
           "choices": [
             {
               "id": "c1",
-              "text": "Scope is Variable"
+              "text": "Scope is Fixed"
             },
             {
               "id": "c2",
-              "text": "Product Backlog"
+              "text": "Scope Management Plan"
             },
             {
               "id": "c3",
+              "text": "Deliverables and Work Packages"
+            },
+            {
+              "id": "c4",
+              "text": "Scope is Variable"
+            },
+            {
+              "id": "c5",
+              "text": "Product Backlog"
+            },
+            {
+              "id": "c6",
               "text": "Epics and User Stories"
             }
           ],
@@ -57352,12 +57400,24 @@
               "choiceId": "c1"
             },
             {
-              "promptId": "p2",
+              "promptId": "p1",
               "choiceId": "c2"
             },
             {
-              "promptId": "p3",
+              "promptId": "p1",
               "choiceId": "c3"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c4"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c5"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c6"
             }
           ]
         },
@@ -57366,35 +57426,43 @@
           "promptNumber": 91,
           "topic": "Drag & Drop",
           "source": "110+Drag+&+Drop+Questions_David+McLachlan+2026.pdf",
-          "type": "drag-drop",
+          "type": "drag-drop-group",
           "stem": "Predictive versus Adaptive",
-          "leftLabel": "Answer",
-          "rightLabel": "Prompt",
+          "leftLabel": "Choices",
+          "rightLabel": "Groups",
           "prompts": [
             {
               "id": "p1",
-              "text": "System Documentation"
+              "text": "Predictive"
             },
             {
               "id": "p2",
-              "text": "Complete Requirements Document"
-            },
-            {
-              "id": "p3",
-              "text": "Schedule Network Diagram"
+              "text": "Agile"
             }
           ],
           "choices": [
             {
               "id": "c1",
-              "text": "Product / Sprint Reviews"
+              "text": "System Documentation"
             },
             {
               "id": "c2",
-              "text": "Close Customer Contact"
+              "text": "Complete Requirements Document"
             },
             {
               "id": "c3",
+              "text": "Schedule Network Diagram"
+            },
+            {
+              "id": "c4",
+              "text": "Product / Sprint Reviews"
+            },
+            {
+              "id": "c5",
+              "text": "Close Customer Contact"
+            },
+            {
+              "id": "c6",
               "text": "Product Roadmap"
             }
           ],
@@ -57404,12 +57472,24 @@
               "choiceId": "c1"
             },
             {
-              "promptId": "p2",
+              "promptId": "p1",
               "choiceId": "c2"
             },
             {
-              "promptId": "p3",
+              "promptId": "p1",
               "choiceId": "c3"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c4"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c5"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c6"
             }
           ]
         },
@@ -58354,43 +58434,51 @@
           "promptNumber": 107,
           "topic": "Drag & Drop",
           "source": "110+Drag+&+Drop+Questions_David+McLachlan+2026.pdf",
-          "type": "drag-drop",
+          "type": "drag-drop-group",
           "stem": "Adaptive versus Predictive",
-          "leftLabel": "Description",
-          "rightLabel": "Answer",
+          "leftLabel": "Choices",
+          "rightLabel": "Groups",
           "prompts": [
             {
               "id": "p1",
-              "text": "Variable Cost"
+              "text": "Predictive"
             },
             {
               "id": "p2",
-              "text": "Directing Leadership"
-            },
-            {
-              "id": "p3",
-              "text": "Prefer written communication"
-            },
-            {
-              "id": "p4",
-              "text": "Requirements defined at beginning"
+              "text": "Agile"
             }
           ],
           "choices": [
             {
               "id": "c1",
-              "text": "Fixed Cost"
+              "text": "Variable Cost"
             },
             {
               "id": "c2",
-              "text": "Servant Leadership"
+              "text": "Directing Leadership"
             },
             {
               "id": "c3",
-              "text": "Prefer face-to-face communication"
+              "text": "Prefer written communication"
             },
             {
               "id": "c4",
+              "text": "Requirements defined at beginning"
+            },
+            {
+              "id": "c5",
+              "text": "Fixed Cost"
+            },
+            {
+              "id": "c6",
+              "text": "Servant Leadership"
+            },
+            {
+              "id": "c7",
+              "text": "Prefer face-to-face communication"
+            },
+            {
+              "id": "c8",
               "text": "Requirements progressively elaborated"
             }
           ],
@@ -58400,16 +58488,32 @@
               "choiceId": "c1"
             },
             {
-              "promptId": "p2",
+              "promptId": "p1",
               "choiceId": "c2"
             },
             {
-              "promptId": "p3",
+              "promptId": "p1",
               "choiceId": "c3"
             },
             {
-              "promptId": "p4",
+              "promptId": "p1",
               "choiceId": "c4"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c5"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c6"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c7"
+            },
+            {
+              "promptId": "p2",
+              "choiceId": "c8"
             }
           ]
         },

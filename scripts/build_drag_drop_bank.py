@@ -246,6 +246,71 @@ SPECIAL_PAIRS: dict[int, list[tuple[str, str]]] = {
     ],
 }
 
+SPECIAL_GROUPS: dict[int, dict[str, list[str]]] = {
+    85: {
+        "Predictive": [
+            "Fixed Scope and Requirements",
+            "Sequential Phases",
+            "Detailed Planning",
+        ],
+        "Agile": [
+            "Adaptive Planning",
+            "Incremental Delivery",
+            "Cross-Functional Teams",
+        ],
+    },
+    86: {
+        "Predictive": [
+            "Work Breakdown Structure (WBS)",
+            "Change Management Plan",
+            "Risk Management Plan",
+        ],
+        "Agile": [
+            "Product Backlog",
+            "Sprint Backlog",
+            "Burndown Chart",
+        ],
+    },
+    90: {
+        "Predictive": [
+            "Scope is Fixed",
+            "Scope Management Plan",
+            "Deliverables and Work Packages",
+        ],
+        "Agile": [
+            "Scope is Variable",
+            "Product Backlog",
+            "Epics and User Stories",
+        ],
+    },
+    91: {
+        "Predictive": [
+            "System Documentation",
+            "Complete Requirements Document",
+            "Schedule Network Diagram",
+        ],
+        "Agile": [
+            "Product / Sprint Reviews",
+            "Close Customer Contact",
+            "Product Roadmap",
+        ],
+    },
+    107: {
+        "Predictive": [
+            "Variable Cost",
+            "Directing Leadership",
+            "Prefer written communication",
+            "Requirements defined at beginning",
+        ],
+        "Agile": [
+            "Fixed Cost",
+            "Servant Leadership",
+            "Prefer face-to-face communication",
+            "Requirements progressively elaborated",
+        ],
+    },
+}
+
 
 def normalize_text(value: str) -> str:
     value = value.replace(" \n", "\n")
@@ -672,6 +737,32 @@ def build_question(prompt_number: int, title: str, left_label: str, right_label:
     }
 
 
+def build_group_question(prompt_number: int, title: str, groups: dict[str, list[str]]) -> dict:
+    prompt_items = [{"id": f"p{index+1}", "text": label} for index, label in enumerate(groups.keys())]
+    ordered_choices = [text for texts in groups.values() for text in texts]
+    choice_items = [{"id": f"c{index+1}", "text": text} for index, text in enumerate(ordered_choices)]
+    choice_lookup = {item["text"]: item["id"] for item in choice_items}
+    prompt_lookup = {item["text"]: item["id"] for item in prompt_items}
+    correct_matches = []
+    for label, texts in groups.items():
+        for text in texts:
+            correct_matches.append({"promptId": prompt_lookup[label], "choiceId": choice_lookup[text]})
+
+    return {
+        "id": prompt_number,
+        "promptNumber": prompt_number,
+        "topic": "Drag & Drop",
+        "source": BANK_SOURCE,
+        "type": "drag-drop-group",
+        "stem": title,
+        "leftLabel": "Choices",
+        "rightLabel": "Groups",
+        "prompts": prompt_items,
+        "choices": choice_items,
+        "correctMatches": correct_matches,
+    }
+
+
 def build_special_question(prompt_number: int, title: str, left_label: str, right_label: str) -> dict:
     return build_question(prompt_number, title, left_label, right_label, SPECIAL_PAIRS[prompt_number])
 
@@ -685,6 +776,9 @@ def parse_question(question_page, answer_page, fitz_answer_page) -> dict | None:
     prompt_number = int(title_match.group(1))
     title = clean_text(title_match.group(2))
     left_label, right_label = parse_headers(answer_page.extract_text(extraction_mode="layout") or "")
+
+    if prompt_number in SPECIAL_GROUPS:
+        return build_group_question(prompt_number, title, SPECIAL_GROUPS[prompt_number])
 
     if prompt_number in SPECIAL_PAIRS:
         return build_special_question(prompt_number, title, left_label, right_label)
