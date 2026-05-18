@@ -51826,6 +51826,10 @@
             {
               "id": "p4",
               "text": "The team meet to update what they worked on yesterday, what they will do today and raise any blockers"
+            },
+            {
+              "id": "p5",
+              "text": "The team demonstrate the usable increment to the customer"
             }
           ],
           "choices": [
@@ -51844,6 +51848,10 @@
             {
               "id": "c4",
               "text": "Daily Stand-ups"
+            },
+            {
+              "id": "c5",
+              "text": "Sprint Review"
             }
           ],
           "correctMatches": [
@@ -51862,6 +51870,10 @@
             {
               "promptId": "p4",
               "choiceId": "c4"
+            },
+            {
+              "promptId": "p5",
+              "choiceId": "c5"
             }
           ]
         },
@@ -52065,7 +52077,7 @@
             },
             {
               "id": "p3",
-              "text": "Assigns Project Managers who report directly to the"
+              "text": "Assigns Project Managers who report directly to the PMO."
             }
           ],
           "choices": [
@@ -52079,7 +52091,7 @@
             },
             {
               "id": "c3",
-              "text": "PMO. Directive"
+              "text": "Directive"
             }
           ],
           "correctMatches": [
@@ -52314,6 +52326,10 @@
             {
               "id": "p4",
               "text": "When your team finds motivation in the work itself, through a strong purpose"
+            },
+            {
+              "id": "p5",
+              "text": "There is not a smooth transition between tasks or team members."
             }
           ],
           "choices": [
@@ -52332,6 +52348,10 @@
             {
               "id": "c4",
               "text": "Intrinsic Motivation"
+            },
+            {
+              "id": "c5",
+              "text": "Dropped Baton"
             }
           ],
           "correctMatches": [
@@ -52350,6 +52370,10 @@
             {
               "promptId": "p4",
               "choiceId": "c4"
+            },
+            {
+              "promptId": "p5",
+              "choiceId": "c5"
             }
           ]
         },
@@ -52629,7 +52653,7 @@
             },
             {
               "id": "p4",
-              "text": "Ashley is responsible for the day-to-day workings of “Project Manager”. the company"
+              "text": "Ashley is responsible for the day-to-day workings of the company"
             }
           ],
           "choices": [

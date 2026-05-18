@@ -49,6 +49,18 @@ REFERENCE_MARKERS = (
 LABEL_STOPWORDS = {"and", "or", "to", "of", "in", "on", "at", "for", "the", "a", "an", "with"}
 
 SPECIAL_PAIRS: dict[int, list[tuple[str, str]]] = {
+    6: [
+        ("The team update User Stories with acceptance criteria and estimates", "Backlog Refinement"),
+        ("The team reflect on their process and lessons learnt", "Retrospective"),
+        ("The team agree on User Stories to complete in the sprint", "Sprint Planning"),
+        ("The team meet to update what they worked on yesterday, what they will do today and raise any blockers", "Daily Stand-ups"),
+        ("The team demonstrate the usable increment to the customer", "Sprint Review"),
+    ],
+    10: [
+        ("The PMO provides a consultative role to projects, supplies templates and best practices.", "Supportive"),
+        ("The PMO requires compliance through adoption of methods or frameworks.", "Controlling"),
+        ("Assigns Project Managers who report directly to the PMO.", "Directive"),
+    ],
     11: [
         ("Resource availability high. Budget managed by Project Manager", "PMO"),
         ("Resource availability moderate to high. Budget managed by Project Manager", "Matrix - Strong"),
@@ -61,6 +73,13 @@ SPECIAL_PAIRS: dict[int, list[tuple[str, str]]] = {
         ("Inspirational motivation", "Transformational"),
         ("High energy, self-confident, holds strong convictions", "Charismatic"),
     ],
+    14: [
+        ("Project work is expanding to fit the time allocated to it", "Parkinson's Law"),
+        ("The team waits until the last minute of a deadline to complete their work", "Student Syndrome"),
+        ("The Functional Manager motivates people with things like money, bonuses and power", "Extrinsic Motivation"),
+        ("When your team finds motivation in the work itself, through a strong purpose", "Intrinsic Motivation"),
+        ("There is not a smooth transition between tasks or team members.", "Dropped Baton"),
+    ],
     15: [
         ("Luke draws energy from solitary activities and inner reflection", "Introversion (I)"),
         ("Mike draws energy from social interaction and external activities", "Extraversion (E)"),
@@ -70,6 +89,12 @@ SPECIAL_PAIRS: dict[int, list[tuple[str, str]]] = {
         ("James makes decisions based on personal values, emotions, and empathy for others", "Feeling (F)"),
         ("Sarah prefers a flexible, adaptable, and spontaneous approach to life", "Perceiving (P)"),
         ("Jill prefers a planned, organized, and structured approach to life", "Judging (J)"),
+    ],
+    18: [
+        ("Michael elicits requirements with the customer and monitors business value", "Business Analyst"),
+        ("Penny oversees and coordinates multiple projects", "Program Manager"),
+        ("Sofia is a manager, responsible for a particular area of the organization", "Functional Manager"),
+        ("Ashley is responsible for the day-to-day workings of the company", "Operations Manager"),
     ],
     20: [
         ("The organization applies Scrum ways of working to programs and portfolios, only when necessary", "Large Scale Scrum"),
